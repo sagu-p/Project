@@ -1,0 +1,53 @@
+{INFO}	com.bank.main.MainBank        	
+=========================================        	04-01-2021 Monday EST 09:28:45 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                	04-01-2021 Monday EST 09:28:45 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                     	04-01-2021 Monday EST 09:28:45 
+{INFO}	com.bank.main.MainBank        	3) Exit                                           	04-01-2021 Monday EST 09:28:45 
+{INFO}	com.bank.main.MainBank        	===========================================       	04-01-2021 Monday EST 09:28:45 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                	04-01-2021 Monday EST 09:28:45 
+{ERROR}	com.bank.main.MainBank        	Enter Valid digit. Don't Enter Charactures or Special Symbols.	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	
+=========================================        	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                     	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	3) Exit                                           	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	===========================================       	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                	04-01-2021 Monday EST 09:28:57 
+{INFO}	com.bank.main.MainBank        	Enter Your Email:                                 	04-01-2021 Monday EST 09:29:03 
+{INFO}	com.bank.main.MainBank        	Enter Your Password:                              	04-01-2021 Monday EST 09:29:14 
+{INFO}	com.bank.main.MainBank        	
+Customer [c_id=3, name=Sagar, email=sagarpatel.sp2611@gmail.com, pass=abc123, number=2407141193, ssn=123114567, gender=male, dob=1998-11-26, address=5043 Branchville Rd, College Park MD 20740, age=0]	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	
+=========================================        	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                     	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	3) Exit                                           	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	===========================================       	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                	04-01-2021 Monday EST 09:29:19 
+{INFO}	com.bank.main.MainBank        	Thank You!...                                     	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	
+=========================================        	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                     	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	3) Exit                                           	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	===========================================       	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                	04-01-2021 Monday EST 09:29:23 
+{INFO}	com.bank.main.MainBank        	Enter Valid Choise.                               	04-01-2021 Monday EST 09:29:35 
+{INFO}	com.bank.main.MainBank        	
+=========================================        	04-01-2021 Monday EST 09:29:46 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                	04-01-2021 Monday EST 09:29:46 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                     	04-01-2021 Monday EST 09:29:46 
+{INFO}	com.bank.main.MainBank        	3) Exit                                           	04-01-2021 Monday EST 09:29:46 
+{INFO}	com.bank.main.MainBank        	===========================================       	04-01-2021 Monday EST 09:29:46 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                	04-01-2021 Monday EST 09:29:46 
+{INFO}	com.bank.main.MainBank        	Enter Your Email:                                 	04-01-2021 Monday EST 09:29:49 
+{INFO}	com.bank.main.MainBank        	Enter Your Password:                              	04-01-2021 Monday EST 09:29:51 
+{ERROR}	com.bank.main.MainBank        	Enter Valid Email Address.                        	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	
+=========================================        	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                     	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	3) Exit                                           	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	===========================================       	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                	04-01-2021 Monday EST 09:29:52 
+{INFO}	com.bank.main.MainBank        	Thank You!...                                     	04-01-2021 Monday EST 09:29:56 

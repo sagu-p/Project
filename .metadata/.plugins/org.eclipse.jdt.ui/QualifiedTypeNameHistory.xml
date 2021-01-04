@@ -7,11 +7,14 @@
     <fullyQualifiedTypeName name="com.bank.dao.CustomerOperations"/>
     <fullyQualifiedTypeName name="com.bank.dao.impl.CustomerOperationImpl"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="com.bank.customerSservices.CustomerOperations"/>
-    <fullyQualifiedTypeName name="com.bank.dao.CustomerOperationsDAO"/>
     <fullyQualifiedTypeName name="com.bank.dao.impl.CustomerOperationsDAOImpl"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.bank.modal.Customer"/>
     <fullyQualifiedTypeName name="com.bank.exception.BussinessException"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="com.bank.main.MainBank"/>
+    <fullyQualifiedTypeName name="com.bank.dao.CustomerOperationsDAO"/>
+    <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+    <fullyQualifiedTypeName name="com.bank.customerSservices.CustomerOperations"/>
 </qualifiedTypeNameHistroy>

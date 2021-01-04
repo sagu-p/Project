@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import com.bank.customerSservices.CustomerOperations;
 import com.bank.customerSservices.impl.CustomerOperationsImpl;
 import com.bank.exception.BussinessException;
@@ -12,6 +14,8 @@ import com.bank.modal.Customer;
 
 public class MainBank {
 
+	private static Logger log = Logger.getLogger(MainBank.class);
+	
 	public static void main(String[] args) {
 		
 		Customer customer=null;  
@@ -23,16 +27,24 @@ public class MainBank {
 		int age, id;
 		
 		
+		
+		
 			int ch = 0;
 			do {
 				
 				try {
-					System.out.println("\n=========================================");
-					System.out.println("1) For Registration (New Customer)");
-					System.out.println("2) For Log In");
-					System.out.println("3) Exit");
-					System.out.println("===========================================");
-					System.out.print("Enter Your Choise: ");
+					//System.out.println("\n=========================================");
+					log.info("\n=========================================");
+					//System.out.println("1) For Registration (New Customer)");
+					log.info("1) For Registration (New Customer)");
+					//System.out.println("2) For Log In");
+					log.info("2) For Log In");
+					//System.out.println("3) Exit");
+					log.info("3) Exit");
+					//System.out.println("===========================================");
+					log.info("===========================================");
+					//System.out.print("Enter Your Choise: ");
+					log.info("Enter Your Choise: ");
 					ch = Integer.parseInt( scan.nextLine() );
 					
 					try {
@@ -41,67 +53,67 @@ public class MainBank {
 							
 							
 							case 1:
-								System.out.print("Enter Your Name: ");
+								log.info("Enter Your Name: ");
 								name = scan.nextLine();
-								System.out.print("Enter Your Email: ");
+								log.info("Enter Your Email: ");
 								email = scan.nextLine();
-								System.out.print("Enter Your Password: ");
+								log.info("Enter Your Password: ");
 								pass = scan.nextLine();
-								System.out.print("Enter Your Mobile Number: ");
+								log.info("Enter Your Mobile Number: ");
 								number = Long.parseLong(scan.nextLine());
-								System.out.print("Enter Your Social Security Number: ");
+								log.info("Enter Your Social Security Number: ");
 								ssn = Long.parseLong(scan.nextLine());
-								System.out.print("Enter Your Gender: ");
+								log.info("Enter Your Gender: ");
 								gender = scan.nextLine();
-								System.out.print("Enter Your Date of Birth (YYYY-MM-DD) : ");
+								log.info("Enter Your Date of Birth (YYYY-MM-DD) : ");
 								String d = scan.nextLine();
 								
 								SimpleDateFormat simpleFormat = new SimpleDateFormat("yyyy-MM-dd");
 								Date dob = simpleFormat.parse(d);
 								
-								System.out.print("Enter Your Address: ");
+								log.info("Enter Your Address: ");
 								address = scan.nextLine();
-								System.out.print("Enter Your Age: ");
+								log.info("Enter Your Age: ");
 								age = Integer.parseInt(scan.nextLine());
 								
 								
 								
 								customer = new Customer(name, email, pass, number, ssn, gender, dob, address, age);
 								customerOperations.newCustomerRegistration(customer);
-								System.out.println("Registration Successfully...\n");
+								log.info("Registration Successfully...\n");
 								
 								break;
 							case 2:
-								System.out.print("Enter Your Email: ");
+								log.info("Enter Your Email: ");
 								email = scan.nextLine();
-								System.out.print("Enter Your Password: ");
+								log.info("Enter Your Password: ");
 								pass = scan.nextLine();
 								
 								customer = customerOperations.customerLogin(email, pass);
-								System.out.println("\n"+customer);
+								log.info("\n"+customer);
 								break;
 								
 							case 3:
-								System.out.println("Thank You!...");
+								log.info("Thank You!...");
 								break;
 							
 							default:
-								System.out.println("Enter Valid Choise.");
+								log.info("Enter Valid Choise.");
 								
 						}
 						
 					} catch (BussinessException e) {
-						System.out.println(e.getMessage());
+						log.error(e.getMessage());
 					} catch (ParseException e) {
-						System.out.println("Enter Valid Date Formate.");
+						log.error("Enter Valid Date Formate.");
 					}
 					
 				}catch(NumberFormatException e)
 				{
-					System.out.println("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+					log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
 				}
 				
-			}while(ch != 9);
+			}while(ch != 3);
 			
 			
 			

@@ -34,12 +34,12 @@ public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
 			
 			c = preparedStatement.executeUpdate();
 			
-			System.out.println(c);
+			log.trace(c);
 			
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.error(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.error(e);
 		}
 		
 		if(c != 0)
@@ -80,9 +80,9 @@ public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
 				throw new BussinessException("Log in Failed. Enter valid Email and/or Password.");
 				
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.error(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.error(e);
 		}
 		
 		return customer;
