@@ -2,9 +2,6 @@ package com.bank.main;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -76,16 +73,11 @@ public class MainBank {
 								
 								log.info("Enter Your Address: ");
 								address = scan.nextLine();
-								
-								//log.info("Enter Your Age: ");
-								//age = Integer.parseInt(scan.nextLine());
-								
-								//converting dob to age
-								LocalDate dobAge = LocalDate.parse(d, DateTimeFormatter.ofPattern("yyyy-MM-dd") );
-								age = Period.between(dobAge, LocalDate.now()).getYears();
+								log.info("Enter Your Age: ");
+								age = Integer.parseInt(scan.nextLine());
 								
 								
-								//log.trace(age);
+								
 								customer = new Customer(name, email, pass, number, ssn, gender, dob, address, age);
 								customerOperations.newCustomerRegistration(customer);
 								log.info("Registration Successfully...\n");

@@ -76,7 +76,6 @@ public class MainBank {
 								
 								log.info("Enter Your Address: ");
 								address = scan.nextLine();
-								
 								//log.info("Enter Your Age: ");
 								//age = Integer.parseInt(scan.nextLine());
 								

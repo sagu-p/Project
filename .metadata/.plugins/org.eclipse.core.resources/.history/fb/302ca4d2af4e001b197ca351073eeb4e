@@ -76,16 +76,14 @@ public class MainBank {
 								
 								log.info("Enter Your Address: ");
 								address = scan.nextLine();
-								
 								//log.info("Enter Your Age: ");
 								//age = Integer.parseInt(scan.nextLine());
+								LocalDate donAge = LocalDate.parse(d, DateTimeFormatter.ofPattern("yyyy-MM-dd") );
+								Period p = Period.between(donAge, LocalDate.now());
+								age = p.getYears();
 								
-								//converting dob to age
-								LocalDate dobAge = LocalDate.parse(d, DateTimeFormatter.ofPattern("yyyy-MM-dd") );
-								age = Period.between(dobAge, LocalDate.now()).getYears();
 								
 								
-								//log.trace(age);
 								customer = new Customer(name, email, pass, number, ssn, gender, dob, address, age);
 								customerOperations.newCustomerRegistration(customer);
 								log.info("Registration Successfully...\n");

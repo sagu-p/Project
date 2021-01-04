@@ -1,0 +1,25 @@
+{INFO}	com.bank.main.MainBank        	
+=========================================                            	04-01-2021 Monday EST 12:11:08 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                                    	04-01-2021 Monday EST 12:11:08 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                                         	04-01-2021 Monday EST 12:11:08 
+{INFO}	com.bank.main.MainBank        	3) Exit                                                               	04-01-2021 Monday EST 12:11:08 
+{INFO}	com.bank.main.MainBank        	===========================================                           	04-01-2021 Monday EST 12:11:08 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                                    	04-01-2021 Monday EST 12:11:08 
+{INFO}	com.bank.main.MainBank        	Enter Your Name:                                                      	04-01-2021 Monday EST 12:11:14 
+{INFO}	com.bank.main.MainBank        	Enter Your Email:                                                     	04-01-2021 Monday EST 12:11:16 
+{INFO}	com.bank.main.MainBank        	Enter Your Password:                                                  	04-01-2021 Monday EST 12:11:21 
+{INFO}	com.bank.main.MainBank        	Enter Your Mobile Number:                                             	04-01-2021 Monday EST 12:11:23 
+{INFO}	com.bank.main.MainBank        	Enter Your Social Security Number:                                    	04-01-2021 Monday EST 12:11:33 
+{INFO}	com.bank.main.MainBank        	Enter Your Gender:                                                    	04-01-2021 Monday EST 12:11:37 
+{INFO}	com.bank.main.MainBank        	Enter Your Date of Birth (YYYY-MM-DD) :                               	04-01-2021 Monday EST 12:11:40 
+{INFO}	com.bank.main.MainBank        	Enter Your Address:                                                   	04-01-2021 Monday EST 12:11:50 
+{TRACE}	com.bank.main.MainBank        	22                                                                    	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	Registration Successfully...
+                                         	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	
+=========================================                            	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                                    	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                                         	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	3) Exit                                                               	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	===========================================                           	04-01-2021 Monday EST 12:11:52 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                                    	04-01-2021 Monday EST 12:11:52 
