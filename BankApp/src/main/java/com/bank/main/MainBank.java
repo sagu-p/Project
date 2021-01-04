@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Scanner;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 import com.bank.customerSservices.CustomerOperations;
@@ -17,7 +18,8 @@ import com.bank.modal.Customer;
 
 public class MainBank {
 
-	private static Logger log = Logger.getLogger(MainBank.class);
+	private static Logger log = Logger.getLogger("consoleLog.MainBank");
+	private static Logger logFile = Logger.getLogger("fileLogger.MainBank");
 	
 	public static void main(String[] args) {
 		
@@ -25,30 +27,25 @@ public class MainBank {
 		CustomerOperations customerOperations = new CustomerOperationsImpl();
 		Scanner scan = new Scanner(System.in);
 		
+		
+		
 		String name, email, pass, gender, address;
 		long number, ssn;
 		int age, id;
-		
-		
-		
 		
 			int ch = 0;
 			do {
 				
 				try {
-					//System.out.println("\n=========================================");
+					
 					log.info("=========================================");
-					//System.out.println("1) For Registration (New Customer)");
 					log.info("1) For Registration (New Customer)");
-					//System.out.println("2) For Log In");
 					log.info("2) For Log In");
-					//System.out.println("3) Exit");
 					log.info("3) Exit");
-					//System.out.println("===========================================");
 					log.info("===========================================");
-					//System.out.print("Enter Your Choise: ");
 					log.info("Enter Your Choise: ");
 					ch = Integer.parseInt( scan.nextLine() );
+					logFile.trace(ch);
 					
 					try {
 				
@@ -58,29 +55,29 @@ public class MainBank {
 							case 1:
 								log.info("Enter Your Name: ");
 								name = scan.nextLine();
-								log.trace(name);
+								logFile.trace(name);
 								log.info("Enter Your Email: ");
 								email = scan.nextLine();
-								log.trace(email);
+								logFile.trace(email);
 								log.info("Enter Your Password: ");
 								pass = scan.nextLine();
-								log.trace(pass);
+								logFile.trace(pass);
 								log.info("Enter Your Mobile Number: ");
 								number = Long.parseLong(scan.nextLine());
-								log.trace(number);
+								logFile.trace(number);
 								log.info("Enter Your Social Security Number: ");
 								ssn = Long.parseLong(scan.nextLine());
-								log.trace(ssn);
+								logFile.trace(ssn);
 								log.info("Enter Your Gender: ");
 								gender = scan.nextLine();
-								log.trace(gender);
+								logFile.trace(gender);
 								log.info("Enter Your Date of Birth (YYYY-MM-DD) : ");
 								String d = scan.nextLine();
-								log.trace(d);
+								logFile.trace(d);
 								
 								SimpleDateFormat simpleFormat = new SimpleDateFormat("yyyy-MM-dd");
 								Date dob = simpleFormat.parse(d);
-								log.trace("Coverted to Date Obj: "+dob);
+								logFile.trace("Coverted to Date Obj: "+dob);
 								
 								log.info("Enter Your Address: ");
 								address = scan.nextLine();
@@ -92,9 +89,8 @@ public class MainBank {
 								//converting dob to age
 								LocalDate dobAge = LocalDate.parse(d, DateTimeFormatter.ofPattern("yyyy-MM-dd") );
 								age = Period.between(dobAge, LocalDate.now()).getYears();
-								log.trace("age: "+ age);
+								logFile.trace("age: "+ age);
 								
-								//log.trace(age);
 								customer = new Customer(name, email, pass, number, ssn, gender, dob, address, age);
 								customerOperations.newCustomerRegistration(customer);
 								log.info("Registration Successfully...\n\n");
@@ -103,10 +99,10 @@ public class MainBank {
 							case 2:
 								log.info("Enter Your Email: ");
 								email = scan.nextLine();
-								log.trace(email);
+								logFile.trace(email);
 								log.info("Enter Your Password: ");
 								pass = scan.nextLine();
-								log.trace(pass);
+								logFile.trace(pass);
 								
 								customer = customerOperations.customerLogin(email, pass);
 								log.info("\n"+customer+"\n\n");

@@ -1,0 +1,20 @@
+{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	=========================================                              
+{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	3) Exit                                                                
+{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	===========================================                            
+{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	04-01-2021 Monday EST 16:07:29	fileLogger.MainBank                     	2                                                                      
+{INFO}	04-01-2021 Monday EST 16:07:29	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	04-01-2021 Monday EST 16:07:33	fileLogger.MainBank                     	sagar@lksd                                                             
+{INFO}	04-01-2021 Monday EST 16:07:33	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	04-01-2021 Monday EST 16:07:35	fileLogger.MainBank                     	gdajvgsd                                                               
+{ERROR}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	Log in Failed. Enter valid Email and/or Password.                      
+{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	=========================================                              
+{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	3) Exit                                                                
+{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	===========================================                            
+{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	04-01-2021 Monday EST 16:07:37	fileLogger.MainBank                     	3                                                                      
+{INFO}	04-01-2021 Monday EST 16:07:37	consoleLog.MainBank                     	Thank You!...                                                          

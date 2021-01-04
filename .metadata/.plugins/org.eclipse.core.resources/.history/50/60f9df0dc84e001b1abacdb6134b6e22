@@ -1,0 +1,43 @@
+{INFO}	com.bank.main.MainBank        	=========================================                             	04-01-2021 Monday EST 15:02:23 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                                    	04-01-2021 Monday EST 15:02:23 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                                         	04-01-2021 Monday EST 15:02:23 
+{INFO}	com.bank.main.MainBank        	3) Exit                                                               	04-01-2021 Monday EST 15:02:23 
+{INFO}	com.bank.main.MainBank        	===========================================                           	04-01-2021 Monday EST 15:02:23 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                                    	04-01-2021 Monday EST 15:02:23 
+{TRACE}	com.bank.main.MainBank        	1                                                                     	04-01-2021 Monday EST 15:02:30 
+{INFO}	com.bank.main.MainBank        	Enter Your Name:                                                      	04-01-2021 Monday EST 15:02:30 
+{TRACE}	com.bank.main.MainBank        	sagag                                                                 	04-01-2021 Monday EST 15:02:33 
+{INFO}	com.bank.main.MainBank        	Enter Your Email:                                                     	04-01-2021 Monday EST 15:02:33 
+{TRACE}	com.bank.main.MainBank        	fcyghvj                                                               	04-01-2021 Monday EST 15:02:36 
+{INFO}	com.bank.main.MainBank        	Enter Your Password:                                                  	04-01-2021 Monday EST 15:02:36 
+{TRACE}	com.bank.main.MainBank        	fgds                                                                  	04-01-2021 Monday EST 15:02:38 
+{INFO}	com.bank.main.MainBank        	Enter Your Mobile Number:                                             	04-01-2021 Monday EST 15:02:38 
+{ERROR}	com.bank.main.MainBank        	Enter Valid digit. Don't Enter Charactures or Special Symbols.        	04-01-2021 Monday EST 15:02:42 
+{INFO}	com.bank.main.MainBank        	=========================================                             	04-01-2021 Monday EST 15:02:42 
+{INFO}	com.bank.main.MainBank        	1) For Registration (New Customer)                                    	04-01-2021 Monday EST 15:02:42 
+{INFO}	com.bank.main.MainBank        	2) For Log In                                                         	04-01-2021 Monday EST 15:02:42 
+{INFO}	com.bank.main.MainBank        	3) Exit                                                               	04-01-2021 Monday EST 15:02:42 
+{INFO}	com.bank.main.MainBank        	===========================================                           	04-01-2021 Monday EST 15:02:42 
+{INFO}	com.bank.main.MainBank        	Enter Your Choise:                                                    	04-01-2021 Monday EST 15:02:42 
+{TRACE}	com.bank.main.MainBank        	3                                                                     	04-01-2021 Monday EST 15:02:46 
+{INFO}	com.bank.main.MainBank        	Thank You!...                                                         	04-01-2021 Monday EST 15:02:46 
+{INFO}	04-01-2021 Monday EST 15:03:51	com.bank.main.MainBank        	=========================================                              
+{INFO}	04-01-2021 Monday EST 15:03:51	com.bank.main.MainBank        	1) For Registration (New Customer)                                     
+{INFO}	04-01-2021 Monday EST 15:03:51	com.bank.main.MainBank        	2) For Log In                                                          
+{INFO}	04-01-2021 Monday EST 15:03:51	com.bank.main.MainBank        	3) Exit                                                                
+{INFO}	04-01-2021 Monday EST 15:03:51	com.bank.main.MainBank        	===========================================                            
+{INFO}	04-01-2021 Monday EST 15:03:51	com.bank.main.MainBank        	Enter Your Choise:                                                     
+{TRACE}	04-01-2021 Monday EST 15:03:55	com.bank.main.MainBank        	2                                                                      
+{INFO}	04-01-2021 Monday EST 15:03:55	com.bank.main.MainBank        	Enter Your Email:                                                      
+{TRACE}	04-01-2021 Monday EST 15:03:56	com.bank.main.MainBank        	afvsd                                                                  
+{INFO}	04-01-2021 Monday EST 15:03:56	com.bank.main.MainBank        	Enter Your Password:                                                   
+{TRACE}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	afd                                                                    
+{ERROR}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	Enter Valid Email Address.                                             
+{INFO}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	=========================================                              
+{INFO}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	1) For Registration (New Customer)                                     
+{INFO}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	2) For Log In                                                          
+{INFO}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	3) Exit                                                                
+{INFO}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	===========================================                            
+{INFO}	04-01-2021 Monday EST 15:03:57	com.bank.main.MainBank        	Enter Your Choise:                                                     
+{TRACE}	04-01-2021 Monday EST 15:03:59	com.bank.main.MainBank        	3                                                                      
+{INFO}	04-01-2021 Monday EST 15:03:59	com.bank.main.MainBank        	Thank You!...                                                          
