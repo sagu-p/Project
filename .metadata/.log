@@ -1795,3 +1795,18 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-01-04 12:42:29.375
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-04 12:46:39.667
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ofmZbEXR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-04 12:46:39.682
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ofmZbEXR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-04 12:46:39.706
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-04 12:46:39.719
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ofmZbEXR => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-01-04 12:46:43.302
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
