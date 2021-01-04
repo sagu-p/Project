@@ -109,7 +109,7 @@ public class MainBank {
 								log.trace(pass);
 								
 								customer = customerOperations.customerLogin(email, pass);
-								log.info("\n"+customer+"\n\n");
+								log.info("\n"+customer);
 								break;
 								
 							case 3:

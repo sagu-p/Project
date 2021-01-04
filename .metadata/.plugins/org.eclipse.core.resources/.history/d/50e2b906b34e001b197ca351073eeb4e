@@ -37,7 +37,7 @@ public class MainBank {
 				
 				try {
 					//System.out.println("\n=========================================");
-					log.info("=========================================");
+					log.info("\n=========================================");
 					//System.out.println("1) For Registration (New Customer)");
 					log.info("1) For Registration (New Customer)");
 					//System.out.println("2) For Log In");
@@ -97,7 +97,7 @@ public class MainBank {
 								//log.trace(age);
 								customer = new Customer(name, email, pass, number, ssn, gender, dob, address, age);
 								customerOperations.newCustomerRegistration(customer);
-								log.info("Registration Successfully...\n\n");
+								log.info("Registration Successfully...\n");
 								
 								break;
 							case 2:
@@ -109,7 +109,7 @@ public class MainBank {
 								log.trace(pass);
 								
 								customer = customerOperations.customerLogin(email, pass);
-								log.info("\n"+customer+"\n\n");
+								log.info("\n"+customer);
 								break;
 								
 							case 3:

@@ -1,7 +1,7 @@
 #seeting log level for the app
 
-log4j.rootLogger = INFO, revFile, console
-//log4j.logger = INFO, console
+log4j.rootLogger = TRACE, revFile
+log4j.rootLogger = INFO, console
 
 #Configuration for Console
 log4j.appender.console = org.apache.log4j.ConsoleAppender
