@@ -1,0 +1,73 @@
+package com.bank.main;
+
+import java.util.Scanner;
+
+import com.bank.dao.CustomerOperationsDAO;
+import com.bank.dao.impl.CustomerOperationsDAOImpl;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Customer;
+
+public class MainBank {
+
+	public static void main(String[] args) {
+		
+		Customer customer=null;  
+		CustomerOperationsDAO customerOprationDAO = new CustomerOperationsDAOImpl();
+		Scanner scan = new Scanner(System.in);
+				
+		//Date dob = new Date();
+		
+		//customer  = new Customer("Zeel", "zeeltank@hotmail.com", "zeel123", 9727822780L, 123450789L, "female", dob, "Navsari", 20);
+		//customerOprationDAO.newCustomerRegistration(customer);
+		//System.out.println("User Registeres Succssfully.");
+		
+		try {
+			int ch = 0;
+			do {
+				
+				System.out.println("\n=======================================================");
+				
+				
+				try {
+					System.out.println("1) For Registration (New Customer)");
+					System.out.println("2) For Log In");
+					System.out.println("9) Exit");
+					System.out.println("=======================================================");
+					System.out.print("Enter Your Choise: ");
+					ch = Integer.parseInt( scan.nextLine() );
+				
+					switch( ch ) {
+					
+						case 1:
+							System.out.println("this module is under Construction.");
+							break;
+						case 2:
+							customer = customerOprationDAO.customerLogin("zelltank@hitmail.com", "zell123");
+							System.out.println("\n"+customer);
+							break;
+							
+						case 9:
+							System.out.println("Thank You!...");
+							break;
+						
+						default:
+							System.out.println("Enter Valid Choise.");
+							
+					}
+					
+				}catch(NumberFormatException e)
+				{
+					System.out.println("Enter Valid Number");
+				}
+				
+			}while(ch != 9);
+			
+			
+			
+			
+		} catch (BussinessException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

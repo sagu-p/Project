@@ -1,0 +1,32 @@
+package com.bank.main;
+
+import com.bank.dao.CustomerOperationsDAO;
+import com.bank.dao.impl.CustomerOperationsDAOImpl;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Customer;
+
+public class MainBank {
+
+	public static void main(String[] args) {
+		
+		Customer customer=null;  
+		CustomerOperationsDAO customerOprationDAO = new CustomerOperationsDAOImpl();
+		
+		//Date dob = new Date();
+		
+		//customer  = new Customer("Zeel", "zeeltank@hotmail.com", "zeel123", 9727822780L, 123450789L, "female", dob, "Navsari", 20);
+		
+		
+		try {
+			//customerOprationDAO.newCustomerRegistration(customer);
+			//System.out.println("User Registeres Succssfully.");
+			
+			customer = customerOprationDAO.customerLogin("zelltank@hitmail.com", "zell123");
+			System.out.println(customer);
+			
+		} catch (BussinessException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

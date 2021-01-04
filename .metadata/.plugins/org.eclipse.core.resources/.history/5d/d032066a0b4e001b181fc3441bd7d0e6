@@ -1,0 +1,18 @@
+package com.bank.dao.impl;
+
+import com.bank.dao.CustomerOperations;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Customer;
+
+public class CustomerOperationImpl implements CustomerOperations {
+
+	@Override
+	public int newCustomerRegistration(Customer customer) throws BussinessException {
+		int c =0;
+		
+		
+		
+		return c;
+	}
+
+}

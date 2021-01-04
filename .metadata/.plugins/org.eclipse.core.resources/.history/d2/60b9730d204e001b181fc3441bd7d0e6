@@ -1,0 +1,33 @@
+package com.bank.customerSservices.impl;
+
+import com.bank.customerSservices.CustomerOperations;
+import com.bank.dao.CustomerOperationsDAO;
+import com.bank.dao.impl.CustomerOperationsDAOImpl;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Customer;
+
+public class CustomerOperationsImpl implements CustomerOperations {
+	
+	private CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+
+	@Override
+	public int newCustomerRegistration(Customer customer) throws BussinessException {
+		int c = 0;
+		
+		return c;
+	}
+
+	@Override
+	public Customer customerLogin(String email, String pass) throws BussinessException {
+		Customer customer = null;
+		
+		if(email.matches("%[@]{1}%[.]{1}%"))
+			customer = customerOperationsDAO.customerLogin(email, pass);
+		else
+			throw new BussinessException("Enter Valid Email Address.");
+		
+		
+		return customer;
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.bank.main;
+
+import java.util.Scanner;
+
+import com.bank.dao.CustomerOperationsDAO;
+import com.bank.dao.impl.CustomerOperationsDAOImpl;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Customer;
+
+public class MainBank {
+
+	public static void main(String[] args) {
+		
+		Customer customer=null;  
+		CustomerOperationsDAO customerOprationDAO = new CustomerOperationsDAOImpl();
+		Scanner scan = new Scanner(System.in);
+				
+		//Date dob = new Date();
+		
+		//customer  = new Customer("Zeel", "zeeltank@hotmail.com", "zeel123", 9727822780L, 123450789L, "female", dob, "Navsari", 20);
+		//customerOprationDAO.newCustomerRegistration(customer);
+		//System.out.println("User Registeres Succssfully.");
+		
+		try {
+			int ch = 0;
+			do {
+				
+				System.out.println("=======================================================");
+				
+				System.out.println("1) For Registration (New Customer)");
+				System.out.println("2) For Log In");
+				System.out.print("Enter Your Choise: ");
+				ch = Integer.parseInt( scan.nextLine() );
+				System.out.println("=======================================================");
+				
+			}while(ch != 9);
+			
+			
+			customer = customerOprationDAO.customerLogin("zelltank@hitmail.com", "zell123");
+			System.out.println(customer);
+			
+		} catch (BussinessException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}
