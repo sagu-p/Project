@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import com.bank.dao.CustomerOperationsDAO;
 import com.bank.dao.util.PostresqlConnection;
 import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
 import com.bank.modal.Customer;
 
 public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
@@ -34,7 +35,7 @@ public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
 			
 			c = preparedStatement.executeUpdate();
 			
-			log.trace(c);
+			logFile.trace(c);
 			
 		} catch (ClassNotFoundException e) {
 			log.error(e);
@@ -92,6 +93,35 @@ public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
 	public Customer getCustomerDetailsById(int id) throws BussinessException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public int createNewBankAccount(Account account, Customer customer) throws BussinessException {
+int c =0;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ) {
+	
+			String query = "insert into bank.account (c_id, open_date, acc_type) values (?,?,?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			
+			preparedStatement.setInt(1, customer.getC_id());
+			preparedStatement.setDate(2, new java.sql.Date(account.getOpen_date().getTime()));
+			preparedStatement.setString(3, account.getAcc_type());
+			
+			c = preparedStatement.executeUpdate();
+			
+			logFile.trace(c+" Number of data inserted to Account table");
+			
+		} catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		if(c != 0)
+			return c;
+		else
+			throw new BussinessException("Unable to Create an Account. Try Again... ");
 	}
 
 

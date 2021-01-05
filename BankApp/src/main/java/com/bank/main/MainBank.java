@@ -12,6 +12,7 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
 import com.bank.modal.Customer;
 import com.bank.modal.Employee;
 import com.bank.services.CustomerOperations;
@@ -28,13 +29,15 @@ public class MainBank {
 		
 		Customer customer=null;  
 		Employee employee = null;
+		Account account = null;
+		
 		CustomerOperations customerOperations = new CustomerOperationsImpl();
 		EmployeeSservices employeeSservices = new EmployeeSservicesImpl(); 
 		Scanner scan = new Scanner(System.in);
 		
 		
 		
-		String name, email, pass, gender, address;
+		String name, email, pass, gender, address, acc_type;
 		long number, ssn;
 		int age;
 		
@@ -112,47 +115,8 @@ public class MainBank {
 								customer = customerOperations.customerLogin(email, pass);
 								logFile.trace("\n"+customer+"\n\n");
 								
-								int ch1 = 0;
-								do {
-									
-									try {
-										log.info("*************************************");
-										log.info("1) To Get Personal Detail");
-										log.info("2) To Open new Account");
-										log.info("3) Show Account/s Details");
-										log.info("9) Log Out");
-										log.info("*************************************");
-										log.info("Enter Your Choise: ");
-										ch1 = Integer.parseInt( scan.nextLine() );
-										logFile.trace(ch1);
-										
-										switch( ch1 ) {
-										
-											case 1:
-												log.info("\nYour Details: "+customer+"\n\n");
-												break;
-												
-											case 2:
-												log.info("This module is under construction");
-												break;
-												
-											case 9:
-												log.info("You are Logged Out.");
-												break;
-												
-											default:
-												log.info("Enter Valid Choise from Menu.");
-										
-										}
-									} catch(NumberFormatException e)
-									{
-										log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
-									} catch (DateTimeParseException e)
-									{
-										log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
-									}
-									
-								}while(ch1 != 9);
+								CustomerAccount ca = new CustomerAccount();
+								ca.doCustomerOperation(customer);
 								
 								break;
 							

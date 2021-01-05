@@ -1,0 +1,13 @@
+package com.bank.modal;
+
+import java.util.Date;
+
+public class Account {
+
+	private int acc_num;
+	private int c_id;
+	private float balance;
+	private Date open_date;
+	private String acc_type;
+	
+}
