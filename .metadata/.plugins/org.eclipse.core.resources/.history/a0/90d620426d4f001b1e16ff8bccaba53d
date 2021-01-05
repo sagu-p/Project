@@ -1,0 +1,15 @@
+package com.bank.employeeSservices.impl;
+
+import com.bank.employeeSservices.EmployeeSservices;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Employee;
+
+public class EmployeeSservicesImpl implements EmployeeSservices {
+
+	@Override
+	public Employee employeeLogIn(String email, String pass) throws BussinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

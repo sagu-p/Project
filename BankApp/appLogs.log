@@ -1,20 +1,184 @@
-{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	=========================================                              
-{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
-{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	2) For Log In                                                          
-{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	3) Exit                                                                
-{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	===========================================                            
-{INFO}	04-01-2021 Monday EST 16:07:26	consoleLog.MainBank                     	Enter Your Choise:                                                     
-{TRACE}	04-01-2021 Monday EST 16:07:29	fileLogger.MainBank                     	2                                                                      
-{INFO}	04-01-2021 Monday EST 16:07:29	consoleLog.MainBank                     	Enter Your Email:                                                      
-{TRACE}	04-01-2021 Monday EST 16:07:33	fileLogger.MainBank                     	sagar@lksd                                                             
-{INFO}	04-01-2021 Monday EST 16:07:33	consoleLog.MainBank                     	Enter Your Password:                                                   
-{TRACE}	04-01-2021 Monday EST 16:07:35	fileLogger.MainBank                     	gdajvgsd                                                               
-{ERROR}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	Log in Failed. Enter valid Email and/or Password.                      
-{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	=========================================                              
-{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
-{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	2) For Log In                                                          
-{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	3) Exit                                                                
-{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	===========================================                            
-{INFO}	04-01-2021 Monday EST 16:07:35	consoleLog.MainBank                     	Enter Your Choise:                                                     
-{TRACE}	04-01-2021 Monday EST 16:07:37	fileLogger.MainBank                     	3                                                                      
-{INFO}	04-01-2021 Monday EST 16:07:37	consoleLog.MainBank                     	Thank You!...                                                          
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:16:39	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:17:02	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:17:04	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:17:04	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:17:07	fileLogger.MainBank                     	vgsd                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:17:07	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:17:08	fileLogger.MainBank                     	vagdsj                                                                 
+{INFO}	05-01-2021 Tuesday EST 12:17:08	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:17:09	fileLogger.MainBank                     	dh                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:09	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:17:11	fileLogger.MainBank                     	423                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:17:11	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:17:12	fileLogger.MainBank                     	43                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:12	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:17:14	fileLogger.MainBank                     	egfd                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:17:14	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:17:21	fileLogger.MainBank                     	2000-12-2                                                              
+{TRACE}	05-01-2021 Tuesday EST 12:17:21	fileLogger.MainBank                     	Coverted to Date Obj: Sat Dec 02 00:00:00 EST 2000                     
+{INFO}	05-01-2021 Tuesday EST 12:17:21	consoleLog.MainBank                     	Enter Your Address:                                                    
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:17:28	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:17:30	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:17:30	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:17:33	fileLogger.MainBank                     	fad                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:17:33	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:17:34	fileLogger.MainBank                     	arsgfd                                                                 
+{INFO}	05-01-2021 Tuesday EST 12:17:34	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:17:35	fileLogger.MainBank                     	gbdf                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:17:35	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:17:36	fileLogger.MainBank                     	43                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:36	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:17:37	fileLogger.MainBank                     	435                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:17:37	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:17:39	fileLogger.MainBank                     	sdcxz                                                                  
+{INFO}	05-01-2021 Tuesday EST 12:17:39	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:17:49	fileLogger.MainBank                     	2000-12-02                                                             
+{TRACE}	05-01-2021 Tuesday EST 12:17:49	fileLogger.MainBank                     	Coverted to Date Obj: Sat Dec 02 00:00:00 EST 2000                     
+{INFO}	05-01-2021 Tuesday EST 12:17:49	consoleLog.MainBank                     	Enter Your Address:                                                    
+{TRACE}	05-01-2021 Tuesday EST 12:17:50	fileLogger.MainBank                     	LOCAL DATE OBJ>>> DOB: 2000-12-02                                      
+{TRACE}	05-01-2021 Tuesday EST 12:17:50	fileLogger.MainBank                     	age: 20                                                                
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	Registration Successfully...
+
+                                         
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:17:50	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:18:48	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:18:48	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:18:49	fileLogger.MainBank                     	tafd                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:18:49	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:18:50	fileLogger.MainBank                     	sbgf                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:18:50	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:18:51	fileLogger.MainBank                     	afdvc                                                                  
+{INFO}	05-01-2021 Tuesday EST 12:18:51	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:18:52	fileLogger.MainBank                     	34                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:18:52	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:18:53	fileLogger.MainBank                     	34                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:18:53	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:18:55	fileLogger.MainBank                     	dsv                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:18:55	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:18:59	fileLogger.MainBank                     	2000                                                                   
+{ERROR}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	Enter Valid Date Formate.                                              
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:18:59	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:19:06	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:19:06	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:19:07	fileLogger.MainBank                     	wvds                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:19:07	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:19:08	fileLogger.MainBank                     	adf                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:19:08	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:19:09	fileLogger.MainBank                     	fdsv                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:19:09	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:19:10	fileLogger.MainBank                     	34                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:19:10	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:19:11	fileLogger.MainBank                     	34                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:19:11	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:19:13	fileLogger.MainBank                     	rds                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:19:13	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:19:21	fileLogger.MainBank                     	2000-12-1                                                              
+{TRACE}	05-01-2021 Tuesday EST 12:19:21	fileLogger.MainBank                     	Coverted to Date Obj: Fri Dec 01 00:00:00 EST 2000                     
+{INFO}	05-01-2021 Tuesday EST 12:19:21	consoleLog.MainBank                     	Enter Your Address:                                                    
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:21:15	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:21:17	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:21:17	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:21:18	fileLogger.MainBank                     	fvsd                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:21:18	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:21:19	fileLogger.MainBank                     	gfz                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:21:19	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:21:19	fileLogger.MainBank                     	dfa                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:21:19	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:21:20	fileLogger.MainBank                     	324                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:21:20	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:21:21	fileLogger.MainBank                     	324                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:21:21	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:21:22	fileLogger.MainBank                     	ewfds                                                                  
+{INFO}	05-01-2021 Tuesday EST 12:21:22	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:21:28	fileLogger.MainBank                     	2000-12-1                                                              
+{TRACE}	05-01-2021 Tuesday EST 12:21:28	fileLogger.MainBank                     	Coverted to Date Obj: Fri Dec 01 00:00:00 EST 2000                     
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:22:04	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:22:06	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:22:06	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:22:07	fileLogger.MainBank                     	wdsv                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:22:07	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:22:08	fileLogger.MainBank                     	fad                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:22:08	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:22:12	fileLogger.MainBank                     	rtsgfdv                                                                
+{INFO}	05-01-2021 Tuesday EST 12:22:12	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:22:14	fileLogger.MainBank                     	43                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:22:14	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:22:14	fileLogger.MainBank                     	25                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:22:14	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:22:16	fileLogger.MainBank                     	dsf                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:22:16	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:22:21	fileLogger.MainBank                     	1000-10-1                                                              
+{TRACE}	05-01-2021 Tuesday EST 12:22:21	fileLogger.MainBank                     	Coverted to Date Obj: Tue Oct 01 00:00:00 EST 1000                     
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:24:03	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:24:04	fileLogger.MainBank                     	1                                                                      
+{INFO}	05-01-2021 Tuesday EST 12:24:04	consoleLog.MainBank                     	Enter Your Name:                                                       
+{TRACE}	05-01-2021 Tuesday EST 12:24:05	fileLogger.MainBank                     	reaf                                                                   
+{INFO}	05-01-2021 Tuesday EST 12:24:05	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	05-01-2021 Tuesday EST 12:24:05	fileLogger.MainBank                     	dfa                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:24:05	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	05-01-2021 Tuesday EST 12:24:06	fileLogger.MainBank                     	dfa                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:24:06	consoleLog.MainBank                     	Enter Your Mobile Number:                                              
+{TRACE}	05-01-2021 Tuesday EST 12:24:07	fileLogger.MainBank                     	45                                                                     
+{INFO}	05-01-2021 Tuesday EST 12:24:07	consoleLog.MainBank                     	Enter Your Social Security Number:                                     
+{TRACE}	05-01-2021 Tuesday EST 12:24:08	fileLogger.MainBank                     	324                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:24:08	consoleLog.MainBank                     	Enter Your Gender:                                                     
+{TRACE}	05-01-2021 Tuesday EST 12:24:09	fileLogger.MainBank                     	fds                                                                    
+{INFO}	05-01-2021 Tuesday EST 12:24:09	consoleLog.MainBank                     	Enter Your Date of Birth (YYYY-MM-DD) :                                
+{TRACE}	05-01-2021 Tuesday EST 12:24:13	fileLogger.MainBank                     	1000-2-2                                                               
+{TRACE}	05-01-2021 Tuesday EST 12:24:13	fileLogger.MainBank                     	Coverted to Date Obj: Fri Feb 02 00:00:00 EST 1000                     
+{ERROR}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	Enter Valid Date Formate.                                              
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	=========================================                              
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	===========================================                            
+{INFO}	05-01-2021 Tuesday EST 12:24:13	consoleLog.MainBank                     	Enter Your Choise:                                                     

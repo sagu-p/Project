@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="com.bank.dao.util.PostresqlConnection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.bank.dao.CustomerOperations"/>
@@ -10,8 +9,6 @@
     <fullyQualifiedTypeName name="com.bank.dao.impl.CustomerOperationsDAOImpl"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.bank.modal.Customer"/>
-    <fullyQualifiedTypeName name="com.bank.exception.BussinessException"/>
     <fullyQualifiedTypeName name="java.util.logging.Logger"/>
     <fullyQualifiedTypeName name="com.bank.dao.CustomerOperationsDAO"/>
     <fullyQualifiedTypeName name="com.bank.customerSservices.CustomerOperations"/>
@@ -21,4 +18,14 @@
     <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
     <fullyQualifiedTypeName name="com.bank.main.MainBank"/>
     <fullyQualifiedTypeName name="org.apache.log4j.Level"/>
+    <fullyQualifiedTypeName name="com.bank.modal.Customer"/>
+    <fullyQualifiedTypeName name="com.bank.EmployeeSservices.EmployeeServices"/>
+    <fullyQualifiedTypeName name="com.bank.dao.impl.EmployeeOperationsDAOImpl"/>
+    <fullyQualifiedTypeName name="com.bank.dao.util.PostresqlConnection"/>
+    <fullyQualifiedTypeName name="com.bank.modal.Employee"/>
+    <fullyQualifiedTypeName name="com.bank.dao.EmployeeOperationsDAO"/>
+    <fullyQualifiedTypeName name="com.bank.services.EmployeeSservices"/>
+    <fullyQualifiedTypeName name="com.bank.services.impl.EmployeeSservicesImpl"/>
+    <fullyQualifiedTypeName name="com.bank.exception.BussinessException"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeParseException"/>
 </qualifiedTypeNameHistroy>
