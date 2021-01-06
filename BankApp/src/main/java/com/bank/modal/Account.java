@@ -10,7 +10,7 @@ public class Account {
 	private String acc_type;
 	private int status;
 	
-	Account(){
+	public Account(){
 		//default Constructor
 	}
 
@@ -71,8 +71,8 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account [acc_num=" + acc_num + ", balance=" + balance + ", open_date=" + open_date + ", acc_type="
-				+ acc_type + ", status=" + status + "]";
+		return "Account Details:\nacc_num=" + acc_num + "\nbalance=" + balance + "\nopen_date=" + open_date + "\nacc_type="
+				+ acc_type + "\nstatus=" + status;
 	}
 	
 	

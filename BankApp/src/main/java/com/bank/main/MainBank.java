@@ -7,6 +7,7 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -40,6 +41,7 @@ public class MainBank {
 		String name, email, pass, gender, address, acc_type;
 		long number, ssn;
 		int age;
+		int ch1;
 		
 			int ch = 0;
 			do {
@@ -115,8 +117,81 @@ public class MainBank {
 								customer = customerOperations.customerLogin(email, pass);
 								logFile.trace("\n"+customer+"\n\n");
 								
-								CustomerAccount ca = new CustomerAccount();
-								ca.doCustomerOperation(customer);
+								ch1 = 0;
+								do {
+									
+									try {
+										log.info("*************************************");
+										log.info("1) To Get Personal Detail");
+										log.info("2) To Open new Account");
+										log.info("3) To See Pending Requests of Account Create");
+										log.info("4) Show Account/s Details");
+										log.info("9) Log Out");
+										log.info("*************************************");
+										log.info("Enter Your Choise: ");
+										ch1 = Integer.parseInt( scan.nextLine() );
+										logFile.trace(ch1);
+										
+										switch( ch1 ) {
+										
+											case 1:
+												log.info("\nYour Details: "+customer+"\n\n");
+												break;
+												
+											case 2:
+												log.info("Create New Bank Account >>>");
+												log.info("1) Savings Account");
+												log.info("2) Checking Account");
+												log.info("Enter Your Choise:");
+												int temp = Integer.parseInt(scan.nextLine());
+												if(temp == 1)
+													acc_type = "saving";
+												else
+													acc_type = "checking";
+												logFile.trace("Account Type: "+acc_type);
+												Date open_date = new Date();
+												logFile.trace("Account open date: "+open_date);
+												account = new Account(open_date, acc_type);
+												
+												customerOperations.createNewBankAccount(account, customer);
+												
+												log.info("Opening an Account Requested Successfully.");
+												logFile.trace(account);
+												
+													
+												
+												break;
+												
+											case 3:
+												log.info("Peding Account Requessts>>>\n");
+												List<Account> pendingRequesteAccounts = customerOperations.getPendingRequesteAccount(customer);
+												log.info(pendingRequesteAccounts+"\n");
+												break;
+												
+											case 4:
+												log.info("This module is under construction >>> Show Account/s Details");
+												break;
+												
+												
+											case 9:
+												log.info("You are Logged Out.");
+												break;
+												
+											default:
+												log.info("Enter Valid Choise from Menu.");
+										
+										}
+									} catch(NumberFormatException e)
+									{
+										log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+									} catch (DateTimeParseException e)
+									{
+										log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+									}
+									
+								}while(ch1 != 9);
+								
+								
 								
 								break;
 							
@@ -131,6 +206,60 @@ public class MainBank {
 								
 								employee = employeeSservices.employeeLogIn(email, pass);
 								log.info(employee);
+								
+								
+								ch1 = 0;
+								
+								do {
+									
+									try {
+										log.info("###########################################################");
+										log.info("1) To Get All Csutomer Details Detail");
+										log.info("2) To Get All pending Request/s for Account Opening");
+										log.info("3) To Get Transaction of an Account");
+										log.info("4) Show Account/s Details");
+										log.info("9) Log Out");
+										log.info("###########################################################");
+										log.info("Enter Your Choise: ");
+										ch1 = Integer.parseInt( scan.nextLine() );
+										logFile.trace(ch1);
+										
+										switch( ch1 ) {
+										
+											case 1:
+												log.info("This module is under construction");
+												break;
+												
+											case 2:
+												log.info("This module is under construction");
+												break;
+												
+											case 3:
+												log.info("This module is under construction");
+												break;
+												
+											case 4:
+												log.info("This module is under construction");
+												break;
+												
+												
+											case 9:
+												log.info("You are Logged Out.");
+												break;
+												
+											default:
+												log.info("Enter Valid Choise from Menu.");
+										
+										}
+									} catch(NumberFormatException e)
+									{
+										log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+									} catch (DateTimeParseException e)
+									{
+										log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+									}
+									
+								}while(ch1 != 9);
 								
 								break;
 								

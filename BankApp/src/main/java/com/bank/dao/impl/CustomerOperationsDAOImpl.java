@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.bank.dao.CustomerOperationsDAO;
 import com.bank.dao.util.PostresqlConnection;
@@ -122,6 +124,41 @@ int c =0;
 			return c;
 		else
 			throw new BussinessException("Unable to Create an Account. Try Again... ");
+	}
+
+	@Override
+	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException {
+		List<Account> pendingRequesteAccounts = new ArrayList<>();
+		Account account = null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+		
+			String quey = "select * from bank.account a where c_id = ? and status = 0";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setInt(1, customer.getC_id());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				account = new Account();
+				account.setAcc_num(rs.getInt("acc_num"));
+				account.setBalance(rs.getFloat("balance"));
+				account.setOpen_date(rs.getDate("open_date"));
+				account.setAcc_type(rs.getString("acc_type"));
+				account.setStatus(rs.getInt("status"));
+				pendingRequesteAccounts.add(account);
+			}
+			
+			if(pendingRequesteAccounts.size() == 0)
+				throw new BussinessException("No Pending Request.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return pendingRequesteAccounts;
 	}
 
 

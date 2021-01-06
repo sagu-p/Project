@@ -1,5 +1,7 @@
 package com.bank.dao;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import com.bank.exception.BussinessException;
@@ -14,6 +16,8 @@ public interface CustomerOperationsDAO {
 	public int newCustomerRegistration(Customer customer) throws BussinessException;
 	public Customer customerLogin(String email, String pass) throws BussinessException;
 	public Customer getCustomerDetailsById(int id) throws BussinessException;
+	
 	public int createNewBankAccount(Account account, Customer customer) throws BussinessException;
+	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException;
 
 }

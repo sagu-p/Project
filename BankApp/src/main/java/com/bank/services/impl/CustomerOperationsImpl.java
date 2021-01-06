@@ -1,5 +1,8 @@
 package com.bank.services.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.bank.dao.CustomerOperationsDAO;
 import com.bank.dao.impl.CustomerOperationsDAOImpl;
 import com.bank.exception.BussinessException;
@@ -64,6 +67,15 @@ public class CustomerOperationsImpl implements CustomerOperations {
 		c = customerOperationsDAO.createNewBankAccount(account, customer);
 		
 		return c;
+	}
+
+	@Override
+	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException {
+		List<Account> pendingRequesteAccounts = new ArrayList<>();
+		
+		pendingRequesteAccounts = customerOperationsDAO.getPendingRequesteAccount(customer);
+		
+		return pendingRequesteAccounts;
 	}
 
 }

@@ -23,7 +23,6 @@ public class Customer {
 	public Customer(String name, String email, String pass, long number, long ssn, String gender, Date dob,
 			String address, int age) {
 		super();
-		this.c_id = c_id;
 		this.name = name;
 		this.email = email;
 		this.pass = pass;
@@ -132,9 +131,8 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [c_id=" + c_id + ", name=" + name + ", email=" + email + ", pass=" + pass + ", number="
-				+ number + ", ssn=" + ssn + ", gender=" + gender + ", dob=" + dob + ", address=" + address + ", age="
-				+ age + "]";
+		return "Customer's Detail:\nname=" + name + "\nemail=" + email + "\npass=" + pass + "\nnumber="+ number + "\nssn=" + ssn + "\ngender=" + gender + "\ndob=" + dob + "\naddress=" + address + "\nage="
+				+ age;
 	}
 	
 	
