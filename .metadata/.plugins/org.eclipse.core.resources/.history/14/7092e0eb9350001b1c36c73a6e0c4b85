@@ -1,0 +1,25 @@
+package com.app.main;
+
+import java.util.Date;
+
+import com.app.modal.Player;
+import com.app.modal.Team;
+
+public class TestMainProject {
+
+	public static void main(String[] args) {
+
+		Player player = new Player(102, "Bhumi", 21, 5432167890L, "IND", "F", new Date());
+		Player player1 = new Player(103, "Sagar", 21, 5432167890L, "USA", "M", new Date());
+		
+		Team team = new Team("Red Bull");
+		Team team1 = new Team("Black Panther");
+		
+		System.out.println(player);
+		System.out.println(player1);
+		
+		//player = new Player(102, "Bhumi", 21, 5432167890L, "IND", "F", new Date());
+
+	}
+
+}

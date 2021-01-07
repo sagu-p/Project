@@ -1,0 +1,8 @@
+package com.app.modal;
+
+public class PlayerTeam {
+
+	private Player player;
+	private Team team;
+	
+}

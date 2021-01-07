@@ -22,15 +22,18 @@
     <fullyQualifiedTypeName name="com.bank.services.EmployeeSservices"/>
     <fullyQualifiedTypeName name="com.bank.services.impl.EmployeeSservicesImpl"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeParseException"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.bank.modal.Customer"/>
     <fullyQualifiedTypeName name="com.bank.main.CustomerAccount"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.bank.exception.BussinessException"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.bank.modal.Account"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.app.modal.Player"/>
+    <fullyQualifiedTypeName name="com.app.modal.Team"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.app.modal.PlayerTeam"/>
 </qualifiedTypeNameHistroy>

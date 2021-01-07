@@ -1,0 +1,43 @@
+package com.app.main;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.app.modal.Player;
+import com.app.modal.PlayerTeam;
+import com.app.modal.Team;
+
+public class TestMainProject {
+
+	public static void main(String[] args) {
+
+		Player player = new Player(102, "Bhumi", 21, 5432167890L, "IND", "F", new Date());
+		Player player1 = new Player(103, "Sagar", 21, 5432167890L, "USA", "M", new Date());
+		
+		Team team = new Team("Red Bull");
+		Team team1 = new Team("Black Panther");
+		
+		
+		PlayerTeam playerT = new PlayerTeam(player, team);
+		PlayerTeam playerT1 = new PlayerTeam(player1, team1);
+		
+		List<PlayerTeam> playerTeam = new ArrayList<>();
+		playerTeam.add(playerT);
+		playerTeam.add(playerT1);
+		//System.out.println(playerTeam);
+		
+		for(PlayerTeam i : playerTeam) {
+			System.out.println(i);
+		}
+		System.out.println(playerTeam.get(1));
+		
+		
+		
+		
+		
+		//player = new Player(102, "Bhumi", 21, 5432167890L, "IND", "F", new Date());
+
+	}
+
+}
