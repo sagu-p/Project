@@ -131,8 +131,8 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer's Detail:\nname=" + name + "\nemail=" + email + "\npass=" + pass + "\nnumber="+ number + "\nssn=" + ssn + "\ngender=" + gender + "\ndob=" + dob + "\naddress=" + address + "\nage="
-				+ age;
+		return "\nCustomer's Detail:\nname=" + name + "\nemail=" + email + "\nnumber="+ number + "\nssn=" + ssn + "\ngender=" + gender + "\ndob=" + dob + "\naddress=" + address + "\nage="
+				+ age + "\n";
 	}
 	
 	

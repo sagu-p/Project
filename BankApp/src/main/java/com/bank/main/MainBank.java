@@ -6,8 +6,11 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -187,6 +190,8 @@ public class MainBank {
 									} catch (DateTimeParseException e)
 									{
 										log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+									} catch ( BussinessException e ) {
+										log.error(e.getMessage());
 									}
 									
 								}while(ch1 != 9);
@@ -205,7 +210,7 @@ public class MainBank {
 								logFile.trace(pass);
 								
 								employee = employeeSservices.employeeLogIn(email, pass);
-								log.info(employee);
+								logFile.info(employee);
 								
 								
 								ch1 = 0;
@@ -231,7 +236,34 @@ public class MainBank {
 												break;
 												
 											case 2:
-												log.info("This module is under construction");
+												log.info("All Account Opening Pending Requests with their the Customer Details:");
+												Map<Customer, Account> customerAccountDetails = new LinkedHashMap<>();
+												customerAccountDetails = employeeSservices.getAllPendingAccountRequest();
+												int count = 1;
+												for(Map.Entry<Customer, Account> ca : customerAccountDetails.entrySet() ) {
+													log.info("\nRequest : "+ count++);
+													log.info(ca.getKey());
+													log.info(ca.getValue()+"\n");
+												}
+												
+												
+												log.info("Select from above for Approval/Rejection.\nEnter Index:");
+												int selection = Integer.parseInt(scan.nextLine()) - 1;
+												logFile.trace(selection);;
+												if(selection > count )
+													throw new BussinessException("Enter valid Choise.");
+												List<Customer> customersList = new ArrayList<>(customerAccountDetails.keySet());
+												account = customerAccountDetails.get(customersList.get(selection));
+												logFile.info(account);
+												log.info("1) For Approval.");
+												log.info("2) For Rejection.");
+												log.info("Enter Choise: ");
+												int status = Integer.parseInt(scan.nextLine());
+												logFile.info(status);
+												employeeSservices.approveAccountOpeningRequest(account, employee, status);
+												logFile.info(account);
+												log.info("\nAccount Updated Successfully.");
+												
 												break;
 												
 											case 3:
@@ -254,9 +286,16 @@ public class MainBank {
 									} catch(NumberFormatException e)
 									{
 										log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+										logFile.error(e);
 									} catch (DateTimeParseException e)
 									{
 										log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+										logFile.error(e);
+									} catch ( IndexOutOfBoundsException e ) {
+										log.error("Enter Valid Choise which is presant.");
+										logFile.error(e);
+									} catch ( BussinessException e ) {
+										log.error(e.getMessage());
 									}
 									
 								}while(ch1 != 9);

@@ -1,0 +1,81 @@
+package com.bank.modal;
+
+import java.util.Date;
+
+public class Account {
+
+	private int acc_num;
+	private float balance;
+	private Date open_date;
+	private String acc_type;
+	private int status;
+	
+	public Account(){
+		//default Constructor
+	}
+
+	public Account(Date open_date, String acc_type) {
+		super();
+		this.open_date = open_date;
+		this.acc_type = acc_type;
+	}
+
+	public Account(int acc_num, float balance, Date open_date, String acc_type, int status) {
+		super();
+		this.acc_num = acc_num;
+		this.balance = balance;
+		this.open_date = open_date;
+		this.acc_type = acc_type;
+		this.status = status;
+	}
+
+	public int getAcc_num() {
+		return acc_num;
+	}
+
+	public void setAcc_num(int acc_num) {
+		this.acc_num = acc_num;
+	}
+
+	public float getBalance() {
+		return balance;
+	}
+
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+
+	public Date getOpen_date() {
+		return open_date;
+	}
+
+	public void setOpen_date(Date open_date) {
+		this.open_date = open_date;
+	}
+
+	public String getAcc_type() {
+		return acc_type;
+	}
+
+	public void setAcc_type(String acc_type) {
+		this.acc_type = acc_type;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	@Override
+	public String toString() {
+		return "Account Details:\nacc_num=" + acc_num + "\nbalance=" + balance + "\nopen_date=" + open_date + "\nacc_type="
+				+ acc_type ;
+	}
+	
+	
+	
+	
+}

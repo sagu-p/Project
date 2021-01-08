@@ -71,8 +71,8 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account Details:\nacc_num=" + acc_num + "\nbalance=" + balance + "\nopen_date=" + open_date + "\nacc_type="
-				+ acc_type + "\nstatus=" + status;
+		return "\nAccount Details:\nacc_num=" + acc_num + "\nbalance=" + balance + "\nopen_date=" + open_date + "\nacc_type="
+				+ acc_type + "\n" ;
 	}
 	
 	

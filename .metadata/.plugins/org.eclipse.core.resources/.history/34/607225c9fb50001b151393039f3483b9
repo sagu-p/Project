@@ -1,0 +1,32 @@
+package com.bank.dao;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import com.bank.dao.impl.EmployeeOperationsDAOImpl;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Employee;
+
+class EmployeeOperationsDAOTest {
+	
+	EmployeeOperationsDAO employeeOperationDAO;
+	Employee employee = null;
+	
+	@BeforeAll
+	public void setUp() {
+		employeeOperationDAO = new EmployeeOperationsDAOImpl();
+	}
+
+	@Test
+	void testEmployeeLogIn() {
+		try {
+			assertEquals(employeeOperationDAO.employeeLogIn("sm@gmail.com", "sam123"), employee);
+		} catch (BussinessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

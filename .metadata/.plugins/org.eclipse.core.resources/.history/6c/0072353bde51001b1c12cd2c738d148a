@@ -1,0 +1,88 @@
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	=========================================                              
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	===========================================                            
+{INFO}	08-01-2021 Friday EST 13:19:03	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	08-01-2021 Friday EST 13:19:16	fileLogger.MainBank                     	3                                                                      
+{INFO}	08-01-2021 Friday EST 13:19:16	consoleLog.MainBank                     	Employee Log In.                                                       
+{INFO}	08-01-2021 Friday EST 13:19:16	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	08-01-2021 Friday EST 13:19:20	fileLogger.MainBank                     	sam@gmail.com                                                          
+{INFO}	08-01-2021 Friday EST 13:19:20	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	08-01-2021 Friday EST 13:19:22	fileLogger.MainBank                     	sam123                                                                 
+{INFO}	08-01-2021 Friday EST 13:19:23	fileLogger.MainBank                     	Employee 
+emp_id=1
+name=Sam
+email=sam@gmail.com
+number=1234567890
+gender=male
+dob=1967-09-19 
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	###########################################################            
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	3) To Get Transaction of an Account                                    
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	###########################################################            
+{INFO}	08-01-2021 Friday EST 13:19:23	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	08-01-2021 Friday EST 13:19:26	fileLogger.MainBank                     	2                                                                      
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	All Account Opening Pending Requests with their the Customer Details:  
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	
+Request : 1                                                           
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	Customer's Detail:
+name=zeel
+email=zeel@gmail.com
+number=261345789
+ssn=0
+gender=null
+dob=2000-12-02
+address=address
+age=20 
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	Account Details:
+acc_num=100002
+balance=0.0
+open_date=2021-01-05
+acc_type=saving
+ 
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	
+Request : 2                                                           
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=123114567
+ssn=0
+gender=null
+dob=1998-11-26
+address=address
+age=22 
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+ 
+{INFO}	08-01-2021 Friday EST 13:19:26	consoleLog.MainBank                     	Select from above for Approval/Rejection.
+Enter Index:                 
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking 
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	###########################################################            
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	3) To Get Transaction of an Account                                    
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	###########################################################            
+{INFO}	08-01-2021 Friday EST 13:19:49	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	=========================================                              
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	===========================================                            
+{INFO}	08-01-2021 Friday EST 13:20:37	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	08-01-2021 Friday EST 13:20:41	fileLogger.MainBank                     	9                                                                      
+{INFO}	08-01-2021 Friday EST 13:20:41	consoleLog.MainBank                     	Thank You!...                                                          
