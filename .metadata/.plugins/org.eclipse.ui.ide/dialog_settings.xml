@@ -46,6 +46,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Revature\GIT_U\Week 2\MokitoJUnit"/>
 			<item value="D:\Revature\GIT_U\Week 2\log4j_demo"/>
 			<item value="D:\Revature\GIT_U\Week 2\JDBC_demo-1"/>
 			<item value="D:\Revature\GIT_U\Week 2\Player_Search_App"/>

@@ -1,0 +1,107 @@
+package com.bank.dao;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.mockStatic;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import org.mockito.Mockito;
+
+import com.bank.dao.impl.EmployeeOperationsDAOImpl;
+import com.bank.dao.util.PostresqlConnection;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Employee;
+
+
+class EmployeeOperationsDAOTest {
+	
+	Connection mockConnection;
+	PreparedStatement mockPreparedStatement; 
+	ResultSet mockResultSet = mock(ResultSet.class);;
+
+	Employee mockEmployee = mock(Employee.class);;
+	
+	EmployeeOperationsDAO employeeOperationsDAO = new EmployeeOperationsDAOImpl();
+	
+	@BeforeAll
+	public static void initalize() {
+		mockStatic(PostresqlConnection.class);
+		when(PostresqlConnection.getConnection()).thenReturn(mockConnection);
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+	}
+	
+	
+	@BeforeEach
+	public void setUp() throws SQLException, ClassNotFoundException {
+	
+		
+		
+		//mockConnection = mock(Connection.class);
+	//	mockPreparedStatement = mock(PreparedStatement.class);
+		//mockResultSet = mock(ResultSet.class);
+	
+		
+		
+		//when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		//when(mockResultSet.next()).thenReturn(Boolean.TRUE);
+		
+		System.out.println("Success Before Each");
+	}
+	
+	
+	@Test
+	public void testEmployeLogInWithoutException() throws SQLException, BussinessException {
+		
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		//doNothing().when(mockPreparedStatement).setString(1, "ABC@gmail.com");
+		//doNothing().when(mockPreparedStatement).setString(2, "abc123");
+		//Employee employee = employeeOperationsDAO.employeeLogIn("ABC@gmail.com", "abc123");
+		when(mockResultSet.next()).thenReturn(Boolean.TRUE);
+		if(mockResultSet.next())
+			System.out.println("RIGHT...");
+		assertNotNull(employeeOperationsDAO.employeeLogIn("ABC@gmail.com", "abc123"));
+		
+		System.out.println("Employe Log In Test Success: employeeLogIn(email, pass)");
+	}	
+	
+	/*
+	@Test
+	public void testEmployeLogInWithException() throws SQLException, BussinessException {
+		
+		when(mockPreparedStatement.executeQuery()).thenReturn(null);
+		when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+		
+		if(mockResultSet.next())
+			System.out.println(1);
+		
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				System.out.println(2);
+				employeeOperationsDAO.employeeLogIn(Mockito.anyString(), Mockito.anyString());
+				System.out.println(3);
+			}
+		});
+		
+		//assertNull(employee);
+		
+		System.out.println("Employe Log In Test for Exception Success: employeeLogIn(email, pass)");
+	}
+	*/
+}

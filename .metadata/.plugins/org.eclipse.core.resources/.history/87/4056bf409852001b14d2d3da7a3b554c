@@ -1,0 +1,59 @@
+package com.bank.dao.util;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.mockStatic;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+class PostresqlConnectionTest {
+	
+	Connection connection;
+	//DriverManager driverManager = mock(DriverManager.class);
+	
+	String name = "postgres";
+	String pass = "1234";
+	String url = "jdbc:postgresql://localhost:5432/postgres";
+	
+
+	@BeforeEach
+	public void setUp() throws SQLException {
+	
+		 connection = mock(Connection.class);
+		 System.out.println("Hello ABC");
+		mockStatic(DriverManager.class);
+		when(DriverManager.getConnection("", name, pass)).thenReturn(connection);
+		System.out.println(1243);
+		
+	}
+	
+	
+	@Test
+	public void testConnection() throws SQLException {
+		System.out.println("Hello");
+		assertEquals(connection, DriverManager.getConnection("", name, pass));
+		System.out.println("Test Success");
+	}
+	
+}
+
+
+/*
+<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+	<dependency>
+	    <groupId>org.mockito</groupId>
+	    <artifactId>mockito-core</artifactId>
+	    <version>3.6.0</version>
+	    <scope>test</scope>
+	</dependency> 
+ */

@@ -1,0 +1,56 @@
+package com.bank.dao.util;
+
+import static org.mockito.Mockito.mock;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
+
+class PostresqlConnectionTest {
+	
+	
+	Connection connection = mock(Connection.class);
+	
+	
+	//String url, name, pass;
+	//private PostresqlConnection postresqlConnection = mock(PostresqlConnection.class);
+
+	/*
+	@Test
+	void testConnection() throws SQLException, ClassNotFoundException {
+		
+			//MockedStatic<DriverManager> mockDriverManager = Mockito.mockStatic(DriverManager.class);
+			when(DriverManager.getConnection(Mockito.anyString(), Mockito.anyString(), Mockito.anyString())).thenReturn(connection);
+			assertEquals(PostresqlConnection.getConnection(), connection);
+			//assertNotNull(PostresqlConnection.getConnection());	
+	}*/
+	
+	@Test
+	void testConnection() throws SQLException, ClassNotFoundException {
+		System.out.println("1232");
+		try( MockedStatic<DriverManager> mockDriverManager = Mockito.mockStatic(DriverManager.class) ){
+			System.out.println("1232");
+			mockDriverManager.verify(() -> DriverManager::getConnection);;
+			System.out.println("1232");
+			System.out.println(DriverManager.getConnection("" , " ", ""));
+			//mockDriverManager.verify(times(1), () -> DriverManager.getConnection("" , " ", "") );
+			
+		}
+	}	
+
+}
+
+
+/*
+<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+	<dependency>
+	    <groupId>org.mockito</groupId>
+	    <artifactId>mockito-core</artifactId>
+	    <version>3.6.0</version>
+	    <scope>test</scope>
+	</dependency> 
+ */

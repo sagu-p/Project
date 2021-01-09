@@ -16,8 +16,6 @@ public class PostresqlConnection {
 	{
 		Class.forName("org.postgresql.Driver");
 		
-		
-		//step 2 - Create Connection
 		String name = "postgres";
 		String pass = "1234";
 		String url = "jdbc:postgresql://localhost:5432/postgres";
@@ -27,7 +25,6 @@ public class PostresqlConnection {
 		//System.out.println("Connection Done.");
 		
 		return conn;
-		
 	}
 
 }

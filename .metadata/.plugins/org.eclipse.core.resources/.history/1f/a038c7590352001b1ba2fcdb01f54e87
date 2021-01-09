@@ -1,0 +1,43 @@
+package com.bank.dao.util;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import org.junit.Rule;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
+
+class PostresqlConnectionTest {
+	
+	
+	Connection connection = mock(Connection.class);
+	
+	
+	//String url, name, pass;
+	//private PostresqlConnection postresqlConnection = mock(PostresqlConnection.class);
+
+	@Test
+	void testConnection() {
+		
+			MockedStatic<DriverManager> mockDriverManager = Mockito.mockStatic(DriverManager.class);
+			when(DriverManager.getConnection(Mockito.anyString(), Mockito.anyString(), Mockito.anyString())).thenReturn(connection);
+			assertEquals(PostresqlConnection.getConnection(), connection);
+			
+			
+			//assertNotNull(PostresqlConnection.getConnection());
+		
+		
+		
+	}
+
+}
