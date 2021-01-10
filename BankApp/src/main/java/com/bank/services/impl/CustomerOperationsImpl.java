@@ -37,8 +37,11 @@ public class CustomerOperationsImpl implements CustomerOperations {
 				throw new BussinessException("Enter Valid Numberof 10 Digits.");
 		}else
 			throw new BussinessException("Enter Valid Email.");
-			
-		return c;
+		
+		if(c != 0)
+			return c;
+		else
+			throw new BussinessException("User can't be able to Sign Up. [Try with different email and/or number.] ");
 	}
 
 	@Override
@@ -75,7 +78,22 @@ public class CustomerOperationsImpl implements CustomerOperations {
 		
 		pendingRequesteAccounts = customerOperationsDAO.getPendingRequesteAccount(customer);
 		
+		if ( pendingRequesteAccounts.size() == 0)
+			throw new BussinessException("No Pending Request.");
+		
 		return pendingRequesteAccounts;
+	}
+
+	@Override
+	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException {
+		List<Account> customerAccounts = new ArrayList<>();
+		
+		customerAccounts = customerOperationsDAO.getAllAccountsOfCustomer(customer);
+		
+		if ( customerAccounts.size() == 0)
+			throw new BussinessException("No Account/s Found.");
+		
+		return customerAccounts;
 	}
 
 }

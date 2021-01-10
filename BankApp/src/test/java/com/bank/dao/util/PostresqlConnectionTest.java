@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -17,17 +18,20 @@ class PostresqlConnectionTest {
 	
 	Connection connection;	
 
-	@BeforeEach
-	public void setUp() throws SQLException {
-	
-		connection = mock(Connection.class);
+	@BeforeAll
+	public static void setUp() throws SQLException {
 		mockStatic(DriverManager.class);
-		when(DriverManager.getConnection(Mockito.anyString(), Mockito.anyString(), Mockito.anyString())).thenReturn(connection);
+	}
+	
+	@BeforeEach
+	public void initialize() {
+		connection = mock(Connection.class);
 	}
 	
 	
 	@Test
 	public void testConnection() throws SQLException, ClassNotFoundException {
+		when(DriverManager.getConnection(Mockito.anyString(), Mockito.anyString(), Mockito.anyString())).thenReturn(connection);
 		assertEquals(connection, PostresqlConnection.getConnection());
 		System.out.println("Connection Test Success: PostresqlConnection.getConnection() ");
 	}

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{CustomerOperationsDAO.java[CustomerOperationsDAO" modifiers="513" timestamp="1609893976011"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{CustomerOperationsDAO.java[CustomerOperationsDAO" modifiers="513" timestamp="1610252356094"/>
     <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{EmployeeOperationsDAO.java[EmployeeOperationsDAO" modifiers="513" timestamp="1610131399831"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.services{TrasactionService.java[TrasactionService" modifiers="513" timestamp="1610300103586"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{TransationServiceDAO.java[TransationServiceDAO" modifiers="513" timestamp="1610300198956"/>
 </typeInfoHistroy>

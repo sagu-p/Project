@@ -19,6 +19,7 @@ public interface CustomerOperations {
 	
 	public int createNewBankAccount(Account account, Customer customer) throws BussinessException;
 	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException;
+	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException;
 	
 	
 }

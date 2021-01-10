@@ -1,0 +1,458 @@
+{TRACE}	09-01-2021 Saturday EST 22:24:18	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:41:34	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:42:33	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:44:39	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:44:39	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:45:42	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:45:42	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:48:52	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:48:52	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:50:02	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 22:50:02	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:02:56	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:02:56	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:06:44	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:06:45	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:07:38	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:07:38	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:07:38	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:10:21	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:10:21	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:10:21	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:10:21	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:14:02	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:14:02	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:14:02	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:14:02	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:17:02	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:17:02	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:17:02	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:17:02	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:18:47	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:18:47	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:18:47	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:18:47	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:20:02	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:20:02	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:20:02	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:20:02	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:20:59	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:20:59	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:20:59	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:20:59	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:21:14	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:21:14	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:21:14	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:21:14	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:21:30	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:21:30	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:21:30	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:21:30	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:29:06	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:29:06	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:29:06	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:29:06	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:29:51	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:29:51	fileLogger.MainBank                     	1                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:29:51	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	09-01-2021 Saturday EST 23:29:51	fileLogger.MainBank                     	0                                                                      
+{TRACE}	09-01-2021 Saturday EST 23:58:21	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:01:13	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:02:39	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:03:28	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:05:19	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:07:34	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:07:35	fileLogger.MainBank                     	1                                                                      
+{TRACE}	10-01-2021 Sunday EST 00:08:22	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:08:23	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:09:07	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:09:07	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:09:22	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:09:22	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:10:03	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:10:03	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:10:20	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:10:21	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:11:26	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:11:26	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:12:42	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:12:43	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:13:11	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:13:11	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:13:38	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:13:38	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:16:00	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:16:00	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:17:04	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{ERROR}	10-01-2021 Sunday EST 00:17:05	consoleLog.MainBank                     	org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "customer_un"
+  Detail: Key (email, number, ssn)=(sagar@gmail.com, 1234567890, 123456789) already exists. 
+{TRACE}	10-01-2021 Sunday EST 00:31:19	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:33:41	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:40:18	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{TRACE}	10-01-2021 Sunday EST 00:42:18	fileLogger.MainBank                     	1 Number of data inserted to Account table                             
+{TRACE}	10-01-2021 Sunday EST 00:42:18	fileLogger.MainBank                     	1                                                                      
+{TRACE}	10-01-2021 Sunday EST 00:42:18	fileLogger.MainBank                     	0 Number of data inserted to Account table                             
+{TRACE}	10-01-2021 Sunday EST 00:42:18	fileLogger.MainBank                     	0                                                                      
+{TRACE}	10-01-2021 Sunday EST 00:46:41	fileLogger.MainBank                     	Coverted to DB Value type >>> Gender: M                                
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:43:24	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:43:30	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 10:43:30	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 10:43:38	fileLogger.MainBank                     	sagarpatel.sp2611@gmail.com                                            
+{INFO}	10-01-2021 Sunday EST 10:43:38	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 10:43:41	fileLogger.MainBank                     	abc123                                                                 
+{TRACE}	10-01-2021 Sunday EST 10:43:42	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=2407141193
+ssn=123114567
+gender=male
+dob=1998-11-26
+address=5043 Branchville Rd, College Park MD 20740
+age=22
+
+
+ 
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:43:42	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:43:45	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	[
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+]
+ 
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:43:45	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:44:02	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:44:02	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:44:22	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 10:44:22	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 10:44:27	fileLogger.MainBank                     	zeel@gmail.com                                                         
+{INFO}	10-01-2021 Sunday EST 10:44:27	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 10:44:30	fileLogger.MainBank                     	zeel123                                                                
+{TRACE}	10-01-2021 Sunday EST 10:44:30	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=zeel
+email=zeel@gmail.com
+number=5647382910
+ssn=261345789
+gender=F
+dob=2000-12-02
+address=NVS
+age=20
+
+
+ 
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:44:30	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:44:34	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	All your Account/s Details                                             
+{ERROR}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	No Pending Request.                                                    
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:44:34	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:16	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	All your Account/s Details                                             
+{ERROR}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	No Pending Request.                                                    
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:16	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:22	fileLogger.MainBank                     	5                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	Enter Valid Choise from Menu.                                          
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:22	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:28	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	Peding Account Requessts>>>
+                                           
+{ERROR}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	No Pending Request.                                                    
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:28	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:39	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	All your Account/s Details                                             
+{ERROR}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	No Pending Request.                                                    
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:39	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:46	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	
+Your Details: 
+Customer's Detail:
+name=zeel
+email=zeel@gmail.com
+number=5647382910
+ssn=261345789
+gender=F
+dob=2000-12-02
+address=NVS
+age=20
+
+
+ 
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:46	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:50	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	All your Account/s Details                                             
+{ERROR}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	No Pending Request.                                                    
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:45:50	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:45:59	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:45:59	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:46:02	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 10:46:02	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 10:46:10	fileLogger.MainBank                     	sagarpatel.sp2611@gmail.com                                            
+{INFO}	10-01-2021 Sunday EST 10:46:10	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 10:46:20	fileLogger.MainBank                     	abc123                                                                 
+{TRACE}	10-01-2021 Sunday EST 10:46:20	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=2407141193
+ssn=123114567
+gender=male
+dob=1998-11-26
+address=5043 Branchville Rd, College Park MD 20740
+age=22
+
+
+ 
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:46:20	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:46:22	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	[
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+]
+ 
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:46:22	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:46:28	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:46:28	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:46:30	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:46:30	consoleLog.MainBank                     	Thank You!...                                                          
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:46:47	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:46:57	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 10:46:57	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 10:47:01	fileLogger.MainBank                     	rita@gmail.com                                                         
+{INFO}	10-01-2021 Sunday EST 10:47:01	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 10:47:05	fileLogger.MainBank                     	rita123                                                                
+{TRACE}	10-01-2021 Sunday EST 10:47:05	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=Rita Patel
+email=rita@gmail.com
+number=9727822234
+ssn=321546789
+gender=female
+dob=1970-06-15
+address=College Park, MD
+age=50
+
+
+ 
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:05	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:47:07	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	All your Account/s Details                                             
+{ERROR}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	No Pending Request.                                                    
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:07	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:47:18	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:47:18	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:47:21	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 10:47:21	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 10:47:34	fileLogger.MainBank                     	sagarpatel.sp2611@gmail.com                                            
+{INFO}	10-01-2021 Sunday EST 10:47:34	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 10:47:37	fileLogger.MainBank                     	abc123                                                                 
+{TRACE}	10-01-2021 Sunday EST 10:47:37	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=2407141193
+ssn=123114567
+gender=male
+dob=1998-11-26
+address=5043 Branchville Rd, College Park MD 20740
+age=22
+
+
+ 
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:37	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:47:39	fileLogger.MainBank                     	4                                                                      
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	[
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+]
+ 
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	*************************************                                  
+{INFO}	10-01-2021 Sunday EST 10:47:39	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:48:00	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 10:48:00	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 10:48:01	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 10:48:01	consoleLog.MainBank                     	Thank You!...                                                          

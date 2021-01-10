@@ -1,0 +1,600 @@
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 15:31:10	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:31:12	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:31:12	consoleLog.MainBank                     	Employee Log In.                                                       
+{INFO}	10-01-2021 Sunday EST 15:31:12	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 15:31:16	fileLogger.MainBank                     	sam@gmail.com                                                          
+{INFO}	10-01-2021 Sunday EST 15:31:16	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 15:31:22	fileLogger.MainBank                     	sam123                                                                 
+{INFO}	10-01-2021 Sunday EST 15:31:22	fileLogger.MainBank                     	Employee 
+emp_id=1
+name=Sam
+email=sam@gmail.com
+number=1234567890
+gender=male
+dob=1967-09-19 
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:22	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:31:26	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:31:26	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:31:26	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:31:26	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:31:26	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:31:32	fileLogger.MainBank                     	42354                                                                  
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:32	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{ERROR}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{ERROR}	10-01-2021 Sunday EST 15:31:37	fileLogger.MainBank                     	java.lang.NumberFormatException: For input string: "jyhdgsfd"          
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:37	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:31:43	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:31:43	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:31:43	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:31:43	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:31:43	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:31:51	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:31:51	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:31:57	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:31:57	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:31:57	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:31:57	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:31:57	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:32:02	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:32:02	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:32:23	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:32:23	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:32:23	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:32:23	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:32:23	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:32:25	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:32:25	consoleLog.MainBank                     	Select from above for Approval/Rejection.
+Enter Index:                 
+{TRACE}	10-01-2021 Sunday EST 15:32:43	fileLogger.MainBank                     	3                                                                      
+{ERROR}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	Enter Valid Choise which is presant.                                   
+{ERROR}	10-01-2021 Sunday EST 15:32:43	fileLogger.MainBank                     	java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3 
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:32:43	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:32:48	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:32:48	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:32:48	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:32:48	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:32:48	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:32:50	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:32:50	consoleLog.MainBank                     	Select from above for Approval/Rejection.
+Enter Index:                 
+{TRACE}	10-01-2021 Sunday EST 15:32:53	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	Transaction
+acc_num=100002
+date=2021-01-10
+msg=Amount Debit to Account
+amount=100.0
+t_type=debit
+balance=100.0
+ 
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:32:53	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:33:08	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 15:33:08	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:33:11	fileLogger.MainBank                     	9                                                                      
+{INFO}	10-01-2021 Sunday EST 15:33:11	consoleLog.MainBank                     	Thank You!...                                                          
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 15:52:29	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:52:34	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:52:34	consoleLog.MainBank                     	Employee Log In.                                                       
+{INFO}	10-01-2021 Sunday EST 15:52:34	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 15:52:39	fileLogger.MainBank                     	sam@gmail.com                                                          
+{INFO}	10-01-2021 Sunday EST 15:52:39	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 15:52:42	fileLogger.MainBank                     	sam123                                                                 
+{INFO}	10-01-2021 Sunday EST 15:52:42	fileLogger.MainBank                     	Employee 
+emp_id=1
+name=Sam
+email=sam@gmail.com
+number=1234567890
+gender=male
+dob=1967-09-19 
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:52:42	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:52:47	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:52:47	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:52:47	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:52:47	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:52:47	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:52:55	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:52:55	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:52:59	fileLogger.MainBank                     	3455                                                                   
+{ERROR}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	Enter valid Choise.                                                    
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:52:59	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:53:05	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:05	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:53:05	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:53:05	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:53:05	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:53:07	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:07	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:53:30	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:30	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:53:30	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:30	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:53:30	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:53:41	fileLogger.MainBank                     	13243                                                                  
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:53:41	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:53:47	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:47	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:53:47	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:53:47	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:53:47	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:53:50	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:50	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:53:53	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:53	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:53:53	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:53	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:53:53	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:53:54	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:53:54	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 15:55:07	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:55:11	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:11	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 15:55:13	fileLogger.MainBank                     	wedwf                                                                  
+{INFO}	10-01-2021 Sunday EST 15:55:13	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 15:55:14	fileLogger.MainBank                     	sgrf                                                                   
+{ERROR}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	Enter Valid Email Address.                                             
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 15:55:14	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:55:17	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:17	consoleLog.MainBank                     	Employee Log In.                                                       
+{INFO}	10-01-2021 Sunday EST 15:55:17	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 15:55:24	fileLogger.MainBank                     	sam@gmail.com                                                          
+{INFO}	10-01-2021 Sunday EST 15:55:24	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 15:55:27	fileLogger.MainBank                     	sam123                                                                 
+{INFO}	10-01-2021 Sunday EST 15:55:28	fileLogger.MainBank                     	Employee 
+emp_id=1
+name=Sam
+email=sam@gmail.com
+number=1234567890
+gender=male
+dob=1967-09-19 
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:55:28	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:55:29	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:29	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:55:30	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:55:30	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:55:30	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:55:32	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:32	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:55:39	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:39	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:55:39	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:39	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:55:39	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:55:41	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:55:41	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:55:58	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:55:58	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:55:58	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:55:58	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:55:58	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:56:00	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:56:00	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:56:02	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:56:02	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:56:02	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:56:02	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:56:02	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:56:04	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:56:04	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 15:57:57	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:58:02	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:02	consoleLog.MainBank                     	Employee Log In.                                                       
+{INFO}	10-01-2021 Sunday EST 15:58:02	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 15:58:07	fileLogger.MainBank                     	sam@gmail.com                                                          
+{INFO}	10-01-2021 Sunday EST 15:58:07	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 15:58:11	fileLogger.MainBank                     	sam123                                                                 
+{INFO}	10-01-2021 Sunday EST 15:58:11	fileLogger.MainBank                     	Employee 
+emp_id=1
+name=Sam
+email=sam@gmail.com
+number=1234567890
+gender=male
+dob=1967-09-19 
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:58:11	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:58:13	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:13	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:58:13	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:58:13	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:58:13	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:58:15	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:15	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:58:20	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:20	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:58:20	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:20	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:58:20	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:58:22	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:58:22	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:58:52	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:52	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:58:52	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:58:52	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:58:52	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:58:56	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:56	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:58:59	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:59	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:58:59	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:58:59	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:58:59	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:59:01	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:59:01	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:59:03	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:03	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:59:03	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:59:03	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:59:03	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:59:06	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:06	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{ERROR}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{ERROR}	10-01-2021 Sunday EST 15:59:09	fileLogger.MainBank                     	java.lang.NumberFormatException: For input string: "ewfdgfnhghfbzdvs"  
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:59:09	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 15:59:12	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:12	consoleLog.MainBank                     	Pending Transction Reqests like Deposit, Widraval :                    
+{INFO}	10-01-2021 Sunday EST 15:59:12	consoleLog.MainBank                     	1) To do Approval or Rejection of Transaction.                         
+{INFO}	10-01-2021 Sunday EST 15:59:12	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:59:12	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 15:59:15	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:15	consoleLog.MainBank                     	Select from above Transaction/s for Approval/Rejection.
+Enter Index:   
+{TRACE}	10-01-2021 Sunday EST 15:59:17	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:17	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 15:59:17	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:17	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 15:59:17	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 15:59:26	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 15:59:26	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	=========================================                              
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	===========================================                            
+{INFO}	10-01-2021 Sunday EST 16:01:10	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 16:01:13	fileLogger.MainBank                     	3                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:13	consoleLog.MainBank                     	Employee Log In.                                                       
+{INFO}	10-01-2021 Sunday EST 16:01:13	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	10-01-2021 Sunday EST 16:01:17	fileLogger.MainBank                     	sam@gmail.com                                                          
+{INFO}	10-01-2021 Sunday EST 16:01:17	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	10-01-2021 Sunday EST 16:01:19	fileLogger.MainBank                     	sam123                                                                 
+{INFO}	10-01-2021 Sunday EST 16:01:19	fileLogger.MainBank                     	Employee 
+emp_id=1
+name=Sam
+email=sam@gmail.com
+number=1234567890
+gender=male
+dob=1967-09-19 
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:01:19	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 16:01:23	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:23	consoleLog.MainBank                     	All Account Opening Pending Requests with their the Customer Details:  
+{INFO}	10-01-2021 Sunday EST 16:01:24	consoleLog.MainBank                     	
+Request : 1                                                           
+{INFO}	10-01-2021 Sunday EST 16:01:24	consoleLog.MainBank                     	
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=123114567
+ssn=0
+gender=null
+dob=1998-11-26
+address=address
+age=22
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:24	consoleLog.MainBank                     	
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:24	consoleLog.MainBank                     	1) To do Approval or Rejection of Account.                             
+{INFO}	10-01-2021 Sunday EST 16:01:24	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 16:01:24	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 16:01:30	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:30	consoleLog.MainBank                     	Select from above for Approval/Rejection.
+Enter Index:                 
+{TRACE}	10-01-2021 Sunday EST 16:01:33	fileLogger.MainBank                     	3433                                                                   
+{ERROR}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	Enter valid Choise.                                                    
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:01:33	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 16:01:37	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	All Account Opening Pending Requests with their the Customer Details:  
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	
+Request : 1                                                           
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=123114567
+ssn=0
+gender=null
+dob=1998-11-26
+address=address
+age=22
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	1) To do Approval or Rejection of Account.                             
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 16:01:37	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 16:01:39	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:39	consoleLog.MainBank                     	Select from above for Approval/Rejection.
+Enter Index:                 
+{TRACE}	10-01-2021 Sunday EST 16:01:45	fileLogger.MainBank                     	0                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:45	fileLogger.MainBank                     	
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:45	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 16:01:45	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:45	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 16:01:45	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 16:01:51	fileLogger.MainBank                     	213245                                                                 
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:01:51	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	10-01-2021 Sunday EST 16:01:57	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	All Account Opening Pending Requests with their the Customer Details:  
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	
+Request : 1                                                           
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=123114567
+ssn=0
+gender=null
+dob=1998-11-26
+address=address
+age=22
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+
+ 
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	1) To do Approval or Rejection of Account.                             
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	2) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 16:01:57	consoleLog.MainBank                     	Select Your Choise:                                                    
+{INFO}	10-01-2021 Sunday EST 16:01:59	fileLogger.MainBank                     	1                                                                      
+{INFO}	10-01-2021 Sunday EST 16:01:59	consoleLog.MainBank                     	Select from above for Approval/Rejection.
+Enter Index:                 
+{TRACE}	10-01-2021 Sunday EST 16:02:03	fileLogger.MainBank                     	0                                                                      
+{INFO}	10-01-2021 Sunday EST 16:02:03	fileLogger.MainBank                     	
+Account Details:
+acc_num=100004
+balance=0.0
+open_date=2021-01-05
+acc_type=checking
+ 
+{INFO}	10-01-2021 Sunday EST 16:02:03	consoleLog.MainBank                     	1) For Approval.                                                       
+{INFO}	10-01-2021 Sunday EST 16:02:03	consoleLog.MainBank                     	2) For Rejection.                                                      
+{INFO}	10-01-2021 Sunday EST 16:02:03	consoleLog.MainBank                     	3) To Do Nothing and Exit.                                             
+{INFO}	10-01-2021 Sunday EST 16:02:03	consoleLog.MainBank                     	Enter Choise:                                                          
+{INFO}	10-01-2021 Sunday EST 16:02:07	fileLogger.MainBank                     	2                                                                      
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	Selection was not Valid.                                               
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	1) To Get All Csutomer Details Detail                                  
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	2) To Get All pending Request/s for Account Opening                    
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	3) Pending Transaction/s Request/s                                     
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	4) Show Account/s Details                                              
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	###########################################################            
+{INFO}	10-01-2021 Sunday EST 16:02:07	consoleLog.MainBank                     	Enter Your Choise:                                                     

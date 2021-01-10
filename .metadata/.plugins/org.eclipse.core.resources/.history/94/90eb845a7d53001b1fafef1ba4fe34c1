@@ -1,0 +1,18 @@
+package com.bank.modal;
+
+import java.sql.Time;
+import java.util.Date;
+
+public class Transaction {
+	
+	private int t_id;
+	private long acc_num;
+	private Date date;
+	private String msg;
+	private float amount;
+	private String t_type;
+	private float balance;
+	private int status;
+	//private Time time;
+
+}

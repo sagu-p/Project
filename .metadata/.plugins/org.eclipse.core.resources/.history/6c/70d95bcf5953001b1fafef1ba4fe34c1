@@ -1,0 +1,194 @@
+package com.bank.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.bank.dao.CustomerOperationsDAO;
+import com.bank.dao.util.PostresqlConnection;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
+
+public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
+
+	@Override
+	public int newCustomerRegistration(Customer customer) throws BussinessException {
+		
+		int c =0;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ) {
+	
+			String query = "insert into bank.customer (name, email, pass, number, ssn, gender, dob, address, age) values (?,?,?,?,?,?,?,?,?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			
+			preparedStatement.setString(1, customer.getName());
+			preparedStatement.setString(2, customer.getEmail());
+			preparedStatement.setString(3, customer.getPass());
+			preparedStatement.setLong(4, customer.getNumber());
+			preparedStatement.setLong(5, customer.getSsn());
+			preparedStatement.setString(6, customer.getGender());
+			preparedStatement.setDate(7, new java.sql.Date(customer.getDob().getTime()));
+			preparedStatement.setString(8, customer.getAddress());
+			preparedStatement.setInt(9, customer.getAge());
+			
+			c = preparedStatement.executeUpdate();
+			
+			logFile.trace(c);
+			
+		} catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		if(c != 0)
+			return c;
+		else
+			throw new BussinessException("User can't be able to Sign Up. [Try with different email and/or number.] ");
+		
+	}
+
+	@Override
+	public Customer customerLogin(String email, String pass) throws BussinessException {
+		Customer customer = null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ) {
+			
+			String query = "select * from bank.customer c where email = ? and pass = ?;";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			
+			preparedStatement.setString(1, email);
+			preparedStatement.setString(2, pass);
+			
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			if( rs.next() ) {
+				customer = new Customer();
+				customer.setC_id(rs.getInt("c_id"));
+				customer.setName(rs.getString("name"));
+				customer.setEmail(rs.getString("email"));
+				customer.setPass(rs.getString("pass"));
+				customer.setNumber(rs.getLong("number"));
+				customer.setSsn(rs.getLong("ssn"));
+				customer.setGender(rs.getString("gender"));
+				customer.setDob(rs.getDate("dob"));
+				customer.setAddress(rs.getString("address"));
+				customer.setAge(rs.getInt("age"));
+			}
+			else
+				throw new BussinessException("Log in Failed. Enter valid Email and/or Password.");
+				
+		} catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return customer;
+	}
+
+	@Override
+	public int createNewBankAccount(Account account, Customer customer) throws BussinessException {
+		int c =0;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ) {
+	
+			String query = "insert into bank.account (c_id, open_date, acc_type) values (?,?,?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			
+			preparedStatement.setInt(1, customer.getC_id());
+			preparedStatement.setDate(2, new java.sql.Date(account.getOpen_date().getTime()));
+			preparedStatement.setString(3, account.getAcc_type());
+			
+			c = preparedStatement.executeUpdate();
+			
+			logFile.trace(c+" Number of data inserted to Account table");
+			
+		} catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		if(c != 0)
+			return c;
+		else
+			throw new BussinessException("Unable to Create an Account. Try Again... ");
+	}
+
+	@Override
+	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException {
+		List<Account> pendingRequesteAccounts = new ArrayList<>();
+		Account account = null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+		
+			String quey = "select * from bank.account a where c_id = ? and status = 0";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setInt(1, customer.getC_id());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				account = new Account();
+				account.setAcc_num(rs.getInt("acc_num"));
+				account.setBalance(rs.getFloat("balance"));
+				account.setOpen_date(rs.getDate("open_date"));
+				account.setAcc_type(rs.getString("acc_type"));
+				account.setStatus(rs.getInt("status"));
+				pendingRequesteAccounts.add(account);
+			}
+			
+			if(pendingRequesteAccounts.size() == 0)
+				throw new BussinessException("No Pending Request.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return pendingRequesteAccounts;
+	}
+
+	@Override
+	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException {
+		List<Account> customerAccounts = new ArrayList<>();
+		Account account = null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+		
+			String quey = "select * from bank.account a where c_id = ? and status = 0";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setInt(1, customer.getC_id());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				account = new Account();
+				account.setAcc_num(rs.getInt("acc_num"));
+				account.setBalance(rs.getFloat("balance"));
+				account.setOpen_date(rs.getDate("open_date"));
+				account.setAcc_type(rs.getString("acc_type"));
+				account.setStatus(rs.getInt("status"));
+				customerAccounts.add(account);
+			}
+			
+			if(customerAccounts.size() == 0)
+				throw new BussinessException("No Account Found.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return customerAccounts;
+	}
+
+
+}

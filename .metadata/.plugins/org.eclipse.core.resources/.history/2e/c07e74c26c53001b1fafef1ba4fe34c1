@@ -1,0 +1,17 @@
+package com.bank.dao;
+
+import org.apache.log4j.Logger;
+
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+
+public interface TransationServiceDAO {
+
+	static Logger log = Logger.getLogger("consoleLog.MainBank");
+	static Logger logFile = Logger.getLogger("fileLogger.MainBank");
+	
+	public int depositeToAccount(Account account) throws BussinessException;
+	public int widrawToAccount(Account account) throws BussinessException;
+	public Account BalanceOfAccount(Account account) throws BussinessException;
+	
+}

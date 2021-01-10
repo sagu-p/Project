@@ -92,14 +92,8 @@ public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
 	}
 
 	@Override
-	public Customer getCustomerDetailsById(int id) throws BussinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public int createNewBankAccount(Account account, Customer customer) throws BussinessException {
-int c =0;
+		int c =0;
 		
 		try ( Connection connection = PostresqlConnection.getConnection() ) {
 	
@@ -159,6 +153,41 @@ int c =0;
 		}
 		
 		return pendingRequesteAccounts;
+	}
+
+	@Override
+	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException {
+		List<Account> customerAccounts = new ArrayList<>();
+		Account account = null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+		
+			String quey = "select * from bank.account a where c_id = ? and status = 1;";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setInt(1, customer.getC_id());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				account = new Account();
+				account.setAcc_num(rs.getInt("acc_num"));
+				account.setBalance(rs.getFloat("balance"));
+				account.setOpen_date(rs.getDate("open_date"));
+				account.setAcc_type(rs.getString("acc_type"));
+				account.setStatus(rs.getInt("status"));
+				customerAccounts.add(account);
+			}
+			
+			if(customerAccounts.size() == 0)
+				throw new BussinessException("No Account/s Found.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return customerAccounts;
 	}
 
 

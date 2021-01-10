@@ -1,0 +1,12 @@
+package com.bank.services;
+
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+
+public interface TrasactionService {
+	
+	public int depositeToAccount(Account account) throws BussinessException;
+	public int widrawToAccount(Account account) throws BussinessException;
+	public Account BalanceOfAccount(Account account) throws BussinessException;
+
+}
