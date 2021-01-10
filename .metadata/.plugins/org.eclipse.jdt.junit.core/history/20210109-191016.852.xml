@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeOperationsDAOTest" project="BankApp" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.bank.dao.EmployeeOperationsDAOTest" time="0.145" displayname="EmployeeOperationsDAOTest" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]">
+    <testcase name="testEmployeeLogInWithoutExceprion" classname="com.bank.dao.EmployeeOperationsDAOTest" time="0.074" displayname="testEmployeeLogInWithoutExceprion()" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]/[method:testEmployeeLogInWithoutExceprion()]"/>
+    <testcase name="testEmployeeLogInWithException" classname="com.bank.dao.EmployeeOperationsDAOTest" time="0.071" displayname="testEmployeeLogInWithException()" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]/[method:testEmployeeLogInWithException()]"/>
+  </testsuite>
+</testrun>

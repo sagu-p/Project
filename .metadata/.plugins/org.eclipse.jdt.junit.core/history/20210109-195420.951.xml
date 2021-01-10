@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeOperationsDAOTest" project="BankApp" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.bank.dao.EmployeeOperationsDAOTest" time="1.335" displayname="EmployeeOperationsDAOTest" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]">
+    <testcase name="testApproveAccountOpeningRequestConfirmation" classname="com.bank.dao.EmployeeOperationsDAOTest" time="1.254" displayname="testApproveAccountOpeningRequestConfirmation()" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]/[method:testApproveAccountOpeningRequestConfirmation()]"/>
+    <testcase name="testApproveAccountOpeningRequestRejection" classname="com.bank.dao.EmployeeOperationsDAOTest" time="0.022" displayname="testApproveAccountOpeningRequestRejection()" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]/[method:testApproveAccountOpeningRequestRejection()]"/>
+    <testcase name="testEmployeeLogInWithoutExceprion" classname="com.bank.dao.EmployeeOperationsDAOTest" time="0.029" displayname="testEmployeeLogInWithoutExceprion()" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]/[method:testEmployeeLogInWithoutExceprion()]"/>
+    <testcase name="testEmployeeLogInWithException" classname="com.bank.dao.EmployeeOperationsDAOTest" time="0.03" displayname="testEmployeeLogInWithException()" uniqueid="[engine:junit-jupiter]/[class:com.bank.dao.EmployeeOperationsDAOTest]/[method:testEmployeeLogInWithException()]"/>
+  </testsuite>
+</testrun>

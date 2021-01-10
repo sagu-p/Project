@@ -1,7 +1,7 @@
 package com.bank.dao;
 
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
@@ -22,48 +22,72 @@ import org.mockito.Mockito;
 import com.bank.dao.impl.EmployeeOperationsDAOImpl;
 import com.bank.dao.util.PostresqlConnection;
 import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
 import com.bank.modal.Employee;
 
 
 class EmployeeOperationsDAOTest {
 	
-	static Connection mockConnection = mock(Connection.class);
-	static PreparedStatement mockPreparedStatement = mock(PreparedStatement.class); 
-	static ResultSet mockResultSet = mock(ResultSet.class);;
-
-	Employee mockEmployee = mock(Employee.class);;
+	Connection mockConnection;
+	PreparedStatement mockPreparedStatement; 
+	ResultSet mockResultSet;
+	
+	Account mockAccount;
+	Employee mockEmployee;
+	Customer mockCustomer;
 	
 	EmployeeOperationsDAO employeeOperationsDAO = new EmployeeOperationsDAOImpl();
 	
 	@BeforeAll
 	public static void initalize() throws SQLException, ClassNotFoundException {
 		mockStatic(PostresqlConnection.class);
+	}
+	
+	@BeforeEach
+	public void setUp() throws ClassNotFoundException, SQLException {
+		
+		mockConnection = mock(Connection.class);
+		mockPreparedStatement = mock(PreparedStatement.class);
+		mockResultSet = mock(ResultSet.class);
+		
+		mockEmployee = mock(Employee.class);
+		mockAccount = mock(Account.class);
+		mockCustomer = mock(Customer.class);
 		
 		when(PostresqlConnection.getConnection()).thenReturn(mockConnection);
 		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
 		
-		
-		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
-		//doNothing().when(mockPreparedStatement).setString(1, "abc");
-		//doNothing().when(mockPreparedStatement).setString(2, "abc");
-		
-		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
-		
-		System.out.println("Success Before ALL");
+		System.out.println("Before Each Test");
 	}
 	
+	
+	//for Employee Log in
 	@Test
 	public void testEmployeeLogInWithoutExceprion() throws BussinessException, SQLException, RuntimeException {
 		
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		
 		when(mockResultSet.next()).thenReturn(Boolean.TRUE);
+		
+		assertNotNull(employeeOperationsDAO.employeeLogIn("", ""));
 		assertNotNull(employeeOperationsDAO.employeeLogIn("abc", "abc"));
+		assertNotNull(employeeOperationsDAO.employeeLogIn("sagar@gmail.com", "gadvjhbsk"));
+		assertNotNull(employeeOperationsDAO.employeeLogIn("ghsdhjsd@", "gabdf"));
+		assertNotNull(employeeOperationsDAO.employeeLogIn("313354", "45432"));
+		assertNotNull(employeeOperationsDAO.employeeLogIn("!@#$%^&*", "!#@$%^&"));
 		System.out.println("Employee Log In Test Successful without exception.");
 	}
 	
 	@Test
 	public void testEmployeeLogInWithException() throws SQLException {
 		
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());		
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		
 		when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+		
 		assertThrows(BussinessException.class, new Executable() {
 			
 			@Override
@@ -73,5 +97,68 @@ class EmployeeOperationsDAOTest {
 			}
 		});
 		System.out.println("Employee Log In Test Successful with exception.");
+	}
+	
+	//for Getting allPending Request
+		@Test
+		public void testGetAllPendingAccountRequest() throws SQLException, BussinessException {
+			
+			when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+			
+			//when(mockResultSet.next()).thenReturn(Boolean.TRUE);
+			when(mockResultSet.next()).thenReturn(Boolean.TRUE, Boolean.TRUE, Boolean.FALSE);
+			
+			assertNotNull(employeeOperationsDAO.getAllPendingAccountRequest());
+			System.out.println("Customer and Account Pending reqests have get.");	
+		}
+		
+		@Test
+		public void testGetAllPendingAccountRequestException() throws SQLException, BussinessException {
+			
+			when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+			when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+			
+			assertThrows(BussinessException.class, new Executable() {
+				@Override
+				public void execute() throws Throwable {
+					// TODO Auto-generated method stub
+					employeeOperationsDAO.getAllPendingAccountRequest();
+				}
+			});
+			System.out.println("None Customer and Account Pending reqests have get.");		
+		}
+	
+	//for Opening Account Request approval
+	@Test
+	public void testApproveAccountOpeningRequestConfirmation() throws SQLException, BussinessException {
+		
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		doNothing().when(mockPreparedStatement).setLong(Mockito.anyInt(), Mockito.anyLong());
+		
+		when(mockPreparedStatement.executeUpdate()).thenReturn(1);
+		
+		assertEquals(1, employeeOperationsDAO.approveAccountOpeningRequest(mockAccount, mockEmployee, 1));
+		System.out.println("Employee Account reqest approval Accepted.");
+	}
+	
+	@Test
+	public void testApproveAccountOpeningRequestRejection() throws SQLException, BussinessException {
+		
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		doNothing().when(mockPreparedStatement).setLong(Mockito.anyInt(), Mockito.anyLong());
+		
+		when(mockPreparedStatement.executeUpdate()).thenReturn(0);
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				employeeOperationsDAO.approveAccountOpeningRequest(mockAccount, mockEmployee, 0);
+			}
+		});
+		System.out.println("Employee Account reqest approval Rejection.");
 	}
 }
