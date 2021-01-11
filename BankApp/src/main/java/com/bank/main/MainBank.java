@@ -160,10 +160,13 @@ public class MainBank {
 				}catch(NumberFormatException e)
 				{
 					log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+					logFile.error(e);
 				}catch (ParseException e) {
 					log.error("Enter Valid Date Formate in ( YYYY-MM-DD ).");
+					logFile.error(e);
 				}catch (DateTimeParseException e) {
 					log.error("Enter Valid Date Formate in ( YYYY-MM-DD ).");
+					logFile.error(e);
 				}
 				
 			}while(ch != 9);
@@ -275,11 +278,16 @@ public class MainBank {
 			} catch(NumberFormatException e)
 			{
 				log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+				logFile.error(e);
 			} catch (DateTimeParseException e)
 			{
 				log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+				logFile.error(e);
 			} catch ( BussinessException e ) {
 				log.error(e.getMessage());
+			} catch (IndexOutOfBoundsException e) {
+				log.error("Please Try Again...");
+				logFile.error(e);
 			}
 			
 		}while(ch1 != 9);
@@ -295,13 +303,13 @@ public class MainBank {
 		int ch = 0;
 		
 		do {
-			
 			try {
 				log.info("*************************************");
 				log.info("1) To Deposite");
 				log.info("2) To Widraw");
-				log.info("3) To Check Account Balance");
-				log.info("4) To See Trasactions");
+				log.info("3) To Trnsfer Money to Another Account");
+				log.info("4) To Check Account Balance");
+				log.info("5) To See All Your Transactions Trasactions");
 				log.info("9) To Exit");
 				log.info("Enter Your Choise:");
 				log.info("*************************************");
@@ -335,13 +343,20 @@ public class MainBank {
 						break;
 						
 					case 4:
-						log.info("This Module is under Cinstruction");
-						
-						
+						log.info("Your Account Balance Info: ");
+						account = transactuinService.BalanceOfAccount(account);
+						log.info("Your Account Current Balance is "+account.getBalance());
 						break;
 						
+					case 5:
+						log.info("\nAll Completed Transaction/s:");
+						List<Transaction> transactionList = transactuinService.getAllTransactionOfAllAccountsByAcount(account);
+						for(Transaction t: transactionList) {
+							log.info(t + "\n");
+						}
+						break;
 					case 9:
-						log.info("You are Logged Out.");
+						log.info("You are Logged Out from this  Account.");
 						break;
 						
 					default:
@@ -351,9 +366,11 @@ public class MainBank {
 			} catch(NumberFormatException e)
 			{
 				log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+				logFile.error(e);
 			} catch (DateTimeParseException e)
 			{
 				log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+				logFile.error(e);
 			} catch (BussinessException e) {
 				log.error(e.getMessage());
 			}

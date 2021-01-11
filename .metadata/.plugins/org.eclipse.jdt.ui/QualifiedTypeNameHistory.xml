@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="org.junit.Rule"/>
     <fullyQualifiedTypeName name="org.mockito.junit.MockitoRule"/>
     <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
@@ -46,18 +45,19 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.bank.modal.Customer"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.bank.modal.Account"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.bank.dao.TransationServiceDAO"/>
     <fullyQualifiedTypeName name="com.bank.dao.impl.TransactionServiceDAOImpl"/>
     <fullyQualifiedTypeName name="java.lang.Float"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.sql.Time"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.bank.services.TrasactionService"/>
     <fullyQualifiedTypeName name="com.bank.services.impl.TransactioServiceImpl"/>
     <fullyQualifiedTypeName name="com.bank.modal.Employee"/>
-    <fullyQualifiedTypeName name="com.bank.exception.BussinessException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.bank.modal.Transaction"/>
+    <fullyQualifiedTypeName name="com.bank.modal.Account"/>
+    <fullyQualifiedTypeName name="com.bank.exception.BussinessException"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
 </qualifiedTypeNameHistroy>

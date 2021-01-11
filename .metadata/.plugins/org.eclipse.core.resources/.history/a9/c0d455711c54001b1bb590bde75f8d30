@@ -1,0 +1,427 @@
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	=========================================                              
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	===========================================                            
+{INFO}	11-01-2021 Monday EST 09:31:08	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:31:26	fileLogger.MainBank                     	2                                                                      
+{INFO}	11-01-2021 Monday EST 09:31:26	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	11-01-2021 Monday EST 09:31:34	fileLogger.MainBank                     	sagarpatel.sp2611@gmail.com                                            
+{INFO}	11-01-2021 Monday EST 09:31:34	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	11-01-2021 Monday EST 09:31:38	fileLogger.MainBank                     	abc123                                                                 
+{TRACE}	11-01-2021 Monday EST 09:31:39	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=Sagar
+email=sagarpatel.sp2611@gmail.com
+number=2407141193
+ssn=123114567
+gender=male
+dob=1998-11-26
+address=5043 Branchville Rd, College Park MD 20740
+age=22
+
+
+ 
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:31:39	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:31:48	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:31:48	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:31:48	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:31:49	fileLogger.MainBank                     	0                                                                      
+{TRACE}	11-01-2021 Monday EST 09:31:49	fileLogger.MainBank                     	
+Account Details:
+acc_num=100001
+balance=1200.0
+open_date=2021-01-05
+acc_type=saving
+ 
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:31:49	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:32:00	fileLogger.MainBank                     	5                                                                      
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	
+All Completed Transaction/s:                                          
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	Transaction
+acc_num=100001
+date=2021-01-02
+msg=Amount debit
+amount=1000.1234
+t_type=debit
+balance=1000.1234
+
+ 
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	Transaction
+acc_num=100001
+date=2021-01-10
+msg=Amount Debit to Account
+amount=1200.0
+t_type=debit
+balance=2323.0
+
+ 
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:32:00	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:32:56	fileLogger.MainBank                     	5                                                                      
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	
+All Completed Transaction/s:                                          
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	Transaction
+acc_num=100001
+date=2021-01-02
+msg=Amount debit
+amount=1000.1234
+t_type=debit
+balance=1000.1234
+
+ 
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:32:56	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:33:24	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:33:24	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:33:26	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	=========================================                              
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	===========================================                            
+{INFO}	11-01-2021 Monday EST 09:33:26	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:33:40	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:33:40	consoleLog.MainBank                     	Thank You!...                                                          
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	=========================================                              
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	===========================================                            
+{INFO}	11-01-2021 Monday EST 09:44:00	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:44:02	fileLogger.MainBank                     	2                                                                      
+{INFO}	11-01-2021 Monday EST 09:44:02	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	11-01-2021 Monday EST 09:44:07	fileLogger.MainBank                     	zeel@gmail.com                                                         
+{INFO}	11-01-2021 Monday EST 09:44:07	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	11-01-2021 Monday EST 09:44:11	fileLogger.MainBank                     	zeel123                                                                
+{TRACE}	11-01-2021 Monday EST 09:44:11	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=zeel
+email=zeel@gmail.com
+number=5647382910
+ssn=261345789
+gender=F
+dob=2000-12-02
+address=NVS
+age=20
+
+
+ 
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:44:11	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:44:16	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:44:16	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:44:16	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:44:18	fileLogger.MainBank                     	0                                                                      
+{TRACE}	11-01-2021 Monday EST 09:44:18	fileLogger.MainBank                     	
+Account Details:
+acc_num=100002
+balance=100.0
+open_date=2021-01-05
+acc_type=saving
+ 
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:44:18	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:44:21	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	You are Logged Out from this  Account.                                 
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:44:21	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:44:23	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:44:23	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:44:23	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:44:24	fileLogger.MainBank                     	53                                                                     
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	=========================================                              
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	===========================================                            
+{INFO}	11-01-2021 Monday EST 09:46:14	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:46:16	fileLogger.MainBank                     	2                                                                      
+{INFO}	11-01-2021 Monday EST 09:46:16	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	11-01-2021 Monday EST 09:46:21	fileLogger.MainBank                     	zeel@gmail.com                                                         
+{INFO}	11-01-2021 Monday EST 09:46:21	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	11-01-2021 Monday EST 09:46:24	fileLogger.MainBank                     	zeel123                                                                
+{TRACE}	11-01-2021 Monday EST 09:46:24	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=zeel
+email=zeel@gmail.com
+number=5647382910
+ssn=261345789
+gender=F
+dob=2000-12-02
+address=NVS
+age=20
+
+
+ 
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:46:24	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:46:29	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:46:29	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:46:29	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:46:31	fileLogger.MainBank                     	344                                                                    
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	=========================================                              
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	===========================================                            
+{INFO}	11-01-2021 Monday EST 09:47:34	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:47:36	fileLogger.MainBank                     	2                                                                      
+{INFO}	11-01-2021 Monday EST 09:47:36	consoleLog.MainBank                     	Enter Your Email:                                                      
+{TRACE}	11-01-2021 Monday EST 09:47:41	fileLogger.MainBank                     	zeel@gmail.com                                                         
+{INFO}	11-01-2021 Monday EST 09:47:41	consoleLog.MainBank                     	Enter Your Password:                                                   
+{TRACE}	11-01-2021 Monday EST 09:47:44	fileLogger.MainBank                     	zeel123                                                                
+{TRACE}	11-01-2021 Monday EST 09:47:44	fileLogger.MainBank                     	
+
+Customer's Detail:
+name=zeel
+email=zeel@gmail.com
+number=5647382910
+ssn=261345789
+gender=F
+dob=2000-12-02
+address=NVS
+age=20
+
+
+ 
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:47:44	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:47:47	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:47:47	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:47:47	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:47:49	fileLogger.MainBank                     	43564                                                                  
+{ERROR}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	Please Try Again...                                                    
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:47:49	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:47:54	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:47:54	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:47:54	consoleLog.MainBank                     	Select Account:                                                        
+{ERROR}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:47:56	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:48:02	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:48:02	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:48:02	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:48:05	fileLogger.MainBank                     	1                                                                      
+{ERROR}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	Please Try Again...                                                    
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:05	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:48:09	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:48:09	consoleLog.MainBank                     	All your Account/s Details                                             
+{INFO}	11-01-2021 Monday EST 09:48:09	consoleLog.MainBank                     	Select Account:                                                        
+{INFO}	11-01-2021 Monday EST 09:48:11	fileLogger.MainBank                     	0                                                                      
+{TRACE}	11-01-2021 Monday EST 09:48:11	fileLogger.MainBank                     	
+Account Details:
+acc_num=100002
+balance=100.0
+open_date=2021-01-05
+acc_type=saving
+ 
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:11	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{ERROR}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:14	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:48:18	fileLogger.MainBank                     	32456                                                                  
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	Enter Valid Choise from Menu.                                          
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:18	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{ERROR}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:23	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:48:29	fileLogger.MainBank                     	4                                                                      
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	Your Account Balance Info:                                             
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	Your Account Current Balance is 100.0                                  
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	1) To Deposite                                                         
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	2) To Widraw                                                           
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	3) To Trnsfer Money to Another Account                                 
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	4) To Check Account Balance                                            
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	5) To See All Your Transactions Trasactions                            
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	9) To Exit                                                             
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:29	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:48:50	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	You are Logged Out from this  Account.                                 
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:48:50	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{ERROR}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:49:03	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{ERROR}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	Enter Valid digit. Don't Enter Charactures or Special Symbols.         
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	1) To Get Personal Detail                                              
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	2) To Open new Account                                                 
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	3) To See Pending Requests of Account Create                           
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details) 
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	5) Show Account/s Details                                              
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	9) Log Out                                                             
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	*************************************                                  
+{INFO}	11-01-2021 Monday EST 09:49:08	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:49:12	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	You are Logged Out.                                                    
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	=========================================                              
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	1) For Registration (New Customer)                                     
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	2) For Log In                                                          
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	3) Employee Log In                                                     
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	9) Exit                                                                
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	===========================================                            
+{INFO}	11-01-2021 Monday EST 09:49:12	consoleLog.MainBank                     	Enter Your Choise:                                                     
+{TRACE}	11-01-2021 Monday EST 09:49:14	fileLogger.MainBank                     	9                                                                      
+{INFO}	11-01-2021 Monday EST 09:49:14	consoleLog.MainBank                     	Thank You!...                                                          

@@ -50,8 +50,14 @@ public class TransactioServiceImpl implements TrasactionService {
 
 	@Override
 	public Account BalanceOfAccount(Account account) throws BussinessException {
-		// TODO Auto-generated method stub
-		return null;
+		Account accountGet = null;
+		
+		accountGet = transationServiceDAO.BalanceOfAccount(account);
+		
+		if(accountGet == null)
+			throw new BussinessException("Something went Wrong.");
+		
+		return accountGet;
 	}
 
 	@Override
@@ -84,4 +90,16 @@ public class TransactioServiceImpl implements TrasactionService {
 			throw new BussinessException("Transaction Approval / Rejection is not Done , Try Again Later.");
 	}
 
+	@Override
+	public List<Transaction> getAllTransactionOfAllAccountsByAcount(Account account) throws BussinessException {
+		
+		List<Transaction> transactionList = new ArrayList<>();
+			
+		transactionList = transationServiceDAO.getAllTransactionOfAllAccountsByAcount(account);
+				
+		if(transactionList.size() == 0)
+			throw new BussinessException("No Transation/s found.");
+		
+		return transactionList;
+	}
 }

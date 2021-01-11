@@ -18,6 +18,7 @@ public interface TrasactionService {
 	public int depositeToAccount(Account account, float amount) throws BussinessException;
 	public int widrawToAccount(Account account, float amount) throws BussinessException;
 	public Account BalanceOfAccount(Account account) throws BussinessException;
+	public List<Transaction> getAllTransactionOfAllAccountsByAcount(Account account) throws BussinessException;
 	
 	//for Transaction Confirmation
 	public List<Transaction> getAllTransactionOfAllAccountsByStatus(int status) throws BussinessException;

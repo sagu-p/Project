@@ -95,8 +95,36 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 
 	@Override
 	public Account BalanceOfAccount(Account account) throws BussinessException {
-		// TODO Auto-generated method stub
-		return null;
+		Account accountGet = null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+			
+			String quey = "select * from bank.account a where acc_num = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setLong(1, account.getAcc_num());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			if(rs.next()) {
+				
+				accountGet = new Account();
+				accountGet.setAcc_num(rs.getInt("acc_num"));
+				accountGet.setBalance(rs.getFloat("balance"));
+				accountGet.setOpen_date(rs.getDate("open_date"));
+				accountGet.setAcc_type(rs.getString("acc_type"));
+				accountGet.setStatus(rs.getInt("status"));
+			}
+			
+			if(accountGet == null)
+				throw new BussinessException("Something went Wrong, Try again later.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		
+		return accountGet;
 	}
 
 	@Override
@@ -172,6 +200,44 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 			return c+c1;
 		else
 			throw new BussinessException("Transaction Approval / Rejection is not Done , Try Again Later.");
+	}
+
+	@Override
+	public List<Transaction> getAllTransactionOfAllAccountsByAcount(Account account) throws BussinessException {
+		List<Transaction> transactionList = new ArrayList<>();
+		Transaction transaction =null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+			
+			String quey = "select * from bank.transaction where acc_num = ? and status = 1 or status = 2 order by t_id;";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setLong(1, account.getAcc_num());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				transaction = new Transaction();
+				transaction.setT_id(rs.getInt("t_id"));
+				transaction.setAcc_num(rs.getLong("acc_num"));
+				transaction.setDate(rs.getDate("date"));
+				transaction.setMsg(rs.getString("msg"));
+				transaction.setAmount(rs.getFloat("amount"));
+				transaction.setT_type(rs.getString("t_type"));
+				transaction.setBalance(rs.getFloat("balance"));
+				transaction.setStatus(rs.getInt("status"));
+				transactionList.add(transaction);
+			}
+			
+			if(transactionList.size() == 0)
+				throw new BussinessException("No Transation/s found.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return transactionList;
 	}
 
 }
