@@ -145,4 +145,19 @@ public class TransactioServiceImpl implements TrasactionService {
 		
 		return c;
 	}
+
+	@Override
+	public List<Transaction> getAllTransactionOfAllAccountsByAcountNumber(long accountNum) throws BussinessException {
+		List<Transaction> accountTransactionList = new ArrayList<>();
+		
+		String matchAccount = accountNum + "" ;
+		if(matchAccount.matches("\\d{6}")) {
+			accountTransactionList = transationServiceDAO.getAllTransactionOfAllAccountsByAcountNumber(accountNum);
+		}else
+			throw new BussinessException("Enter Valid Account Number.");
+		if(accountTransactionList.size() == 0)
+			throw new BussinessException("There is NoTransaction found.");
+		
+		return accountTransactionList;
+	}
 }

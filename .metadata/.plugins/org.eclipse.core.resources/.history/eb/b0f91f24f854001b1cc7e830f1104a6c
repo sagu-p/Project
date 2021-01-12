@@ -1,0 +1,142 @@
+package com.bank.main;
+
+import java.time.format.DateTimeParseException;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
+import com.bank.services.CustomerOperations;
+import com.bank.services.impl.CustomerOperationsImpl;
+
+public class CustomerMain {
+	
+	private static Logger log = Logger.getLogger("consoleLog.MainBank");
+	private static Logger logFile = Logger.getLogger("fileLogger.MainBank");
+	
+	//All customer Operations
+		public static void customerOperationsMain(Customer customer) {
+			
+			Scanner scan = new Scanner(System.in);
+			
+			Account account = null;
+			
+			CustomerOperations customerOperations = new CustomerOperationsImpl();
+			
+			String acc_type;
+			int ch1;
+			
+			ch1 = 0;
+			do {
+				
+				try {
+					log.info("*************************************");
+					log.info("1) To Get Personal Detail");
+					log.info("2) To Open new Account");
+					log.info("3) To See Pending Requests of Account Create");
+					log.info("4) To Do Transaction like (Deposite / Widraw / Balance Inquery / MoneyTransfer / Transaction Details)");
+					log.info("5) Show Account/s Details");
+					log.info("9) Log Out");
+					log.info("*************************************");
+					log.info("Enter Your Choise: ");
+					ch1 = Integer.parseInt( scan.nextLine() );
+					logFile.trace(ch1);
+					
+					switch( ch1 ) {
+					
+						case 1:
+							log.info("\nYour Details: "+customer+"\n\n");
+							break;
+							
+						case 2:
+							log.info("Create New Bank Account >>>");
+							log.info("1) Savings Account");
+							log.info("2) Checking Account");
+							log.info("Enter Your Choise:");
+							int temp = Integer.parseInt(scan.nextLine());
+							if(temp == 1)
+								acc_type = "saving";
+							else
+								acc_type = "checking";
+							logFile.trace("Account Type: "+acc_type);
+							Date open_date = new Date();
+							logFile.trace("Account open date: "+open_date);
+							account = new Account(open_date, acc_type);
+							
+							customerOperations.createNewBankAccount(account, customer);
+							
+							log.info("Opening an Account Requested Successfully.");
+							logFile.trace(account);
+							
+								
+							
+							break;
+							
+						case 3:
+							log.info("Peding Account Requessts>>>\n");
+							List<Account> pendingRequesteAccounts = customerOperations.getPendingRequesteAccount(customer);
+							log.info(pendingRequesteAccounts+"\n");
+							break;
+							
+						case 4:
+							log.info("All your Account/s Details");
+							List<Account> customerAccountsList = customerOperations.getAllAccountsOfCustomer(customer);
+							int count = 1;
+							for(Account a: customerAccountsList) {
+								System.out.println("Account: "+count++);
+								System.out.println(a);
+							}
+							log.info("Select Account:");
+							int temp1 = Integer.parseInt(scan.nextLine()) - 1;
+							logFile.info(temp1);
+							account = customerAccountsList.get(temp1);
+							logFile.trace(account);
+							
+							//doTrasaction(account);
+							TransactionMain.doTrasaction(account);
+							break;
+						
+						case 5:
+							log.info("All your Account/s Details");
+							List<Account> customerAccounts = customerOperations.getAllAccountsOfCustomer(customer);
+							count = 1;
+							for(Account a: customerAccounts) {
+								log.info("Account : "+ count++);
+								log.info(a + "\n");
+							}
+								
+							
+							
+							break;
+							
+						case 9:
+							log.info("You are Logged Out.");
+							break;
+							
+						default:
+							log.info("Enter Valid Choise from Menu.");
+					
+					}
+				} catch(NumberFormatException e)
+				{
+					log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+					logFile.error(e);
+				} catch (DateTimeParseException e)
+				{
+					log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+					logFile.error(e);
+				} catch ( BussinessException e ) {
+					log.error(e.getMessage());
+				} catch (IndexOutOfBoundsException e) {
+					log.error("Please Try Again...");
+					logFile.error(e);
+				}
+				
+			}while(ch1 != 9);
+			scan.close();
+		}
+}

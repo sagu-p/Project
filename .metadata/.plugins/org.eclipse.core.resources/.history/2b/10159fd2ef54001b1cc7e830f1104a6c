@@ -1,0 +1,186 @@
+package com.bank.main;
+
+import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
+import com.bank.modal.Employee;
+import com.bank.modal.Transaction;
+import com.bank.services.EmployeeSservices;
+import com.bank.services.TrasactionService;
+import com.bank.services.impl.EmployeeSservicesImpl;
+import com.bank.services.impl.TransactioServiceImpl;
+
+public class EmployeeMain {
+	
+	private static Logger log = Logger.getLogger("consoleLog.MainBank");
+	private static Logger logFile = Logger.getLogger("fileLogger.MainBank");
+	
+	//all Employee Operations
+		public static void employeeOperationMain(Employee employee) {
+			
+			Scanner scan = new Scanner(System.in);
+			
+			
+			Account account = null;
+			Transaction transaction = null;
+			
+			EmployeeSservices employeeSservices = new EmployeeSservicesImpl();
+			TrasactionService transactionService = new TransactioServiceImpl();
+			
+			
+			int status;
+			int ch1, check, selection;	
+			
+			ch1 = 0;
+			
+			do {
+				
+				try {
+					log.info("###########################################################");
+					log.info("1) To Get All Csutomer Details Detail");
+					log.info("2) To Get All pending Request/s for Account Opening");
+					log.info("3) Pending Transaction/s Request/s");
+					log.info("4) Show All Transactions");
+					log.info("9) Log Out");
+					log.info("###########################################################");
+					log.info("Enter Your Choise: ");
+					ch1 = Integer.parseInt( scan.nextLine() );
+					logFile.trace(ch1);
+					status = 0;
+					check = 0;
+					selection = 0;
+					switch( ch1 ) {
+						
+						case 1:
+							log.info("This module is under construction");
+							break;
+							
+						case 2:
+							log.info("All Account Opening Pending Requests with their the Customer Details:");
+							Map<Customer, Account> customerAccountDetails = new LinkedHashMap<>();
+							customerAccountDetails = employeeSservices.getAllPendingAccountRequest();
+							int count = 1;
+							for(Map.Entry<Customer, Account> ca : customerAccountDetails.entrySet() ) {
+								log.info("\nRequest : "+ count++);
+								log.info(ca.getKey());
+								log.info(ca.getValue()+"\n");
+							}
+							
+							log.info("1) To do Approval or Rejection of Account.");
+							log.info("2) To Do Nothing and Exit.");
+							log.info("Select Your Choise:");
+							check = Integer.parseInt(scan.nextLine());
+							logFile.info(check);
+							
+							if(check == 1) {
+								log.info("Select from above for Approval/Rejection.\nEnter Index:");
+								selection = Integer.parseInt(scan.nextLine()) - 1;
+								logFile.trace(selection);;
+								if(selection >= count )
+									throw new BussinessException("Enter valid Choise.");
+								List<Customer> customersList = new ArrayList<>(customerAccountDetails.keySet());
+								account = customerAccountDetails.get(customersList.get(selection));
+								logFile.info(account);
+								log.info("1) For Approval.");
+								log.info("2) For Rejection.");
+								log.info("3) To Do Nothing and Exit.");
+								log.info("Enter Choise: ");
+								status = Integer.parseInt(scan.nextLine());
+								logFile.info(status);
+								if(status ==1 || status == 2) {
+									employeeSservices.approveAccountOpeningRequest(account, employee, status);
+									logFile.info(account);
+									log.info("\nAccount Updated Successfully.");
+								}else if(status != 3) {
+									log.info("Selection was not Valid.");
+								}
+							} else if(check != 2) {
+								log.info("Selection was not Valid.");
+							}
+							
+							break;
+							
+						case 3:
+							log.info("Pending Transction Reqests like Deposit, Widraval :");
+							List<Transaction> transactionList = new ArrayList<>();
+							status  = 0;
+							transactionList = transactionService.getAllTransactionOfAllAccountsByStatus(status);
+							count = 1;
+							for(Transaction t: transactionList) {
+								System.out.println(count++);
+								System.out.println(t + "\n");
+							}
+							log.info("1) To do Approval or Rejection of Transaction.");
+							log.info("2) To Do Nothing and Exit.");
+							log.info("Select Your Choise:");
+							check = Integer.parseInt(scan.nextLine());
+							logFile.info(check);
+							if(check == 1) {
+								log.info("Select from above Transaction/s for Approval/Rejection.\nEnter Index:");
+								selection = Integer.parseInt(scan.nextLine()) - 1;
+								logFile.trace(selection);
+								if(selection >= count )
+									throw new BussinessException("Enter valid Choise.");
+								transaction = transactionList.get(selection);
+								
+								log.info("1) For Approval.");
+								log.info("2) For Rejection.");
+								log.info("3) To Do Nothing and Exit.");
+								log.info("Enter Choise: ");
+								status = Integer.parseInt(scan.nextLine());
+								logFile.info(status);
+								if(status ==1 || status == 2) {							
+									transactionService.transactionConfirmationFromEmployee(employee, transaction, status);
+									log.info("Transaction Conformation / Rejection Successful.");
+								} else if(status != 3) 
+									log.info("Selection was not Valid.");
+								
+							} else if (check !=2)
+								log.info("Selection was not Valid.");
+							
+							break;
+							
+						case 4:
+							log.info("Transaction Details by Account Number:");
+							log.info("Enter Account Number: ");
+							long accountNum = Long.parseLong(scan.nextLine());
+							logFile.info(accountNum);
+							break;
+							
+							
+						case 9:
+							log.info("You are Logged Out.");
+							break;
+							
+						default:
+							log.info("Enter Valid Choise from Menu.");
+					
+					}
+				} catch(NumberFormatException e)
+				{
+					log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+					logFile.error(e);
+				} catch (DateTimeParseException e)
+				{
+					log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+					logFile.error(e);
+				} catch ( IndexOutOfBoundsException e ) {
+					log.error("Enter Valid Choise which is presant.");
+					logFile.error(e);
+				} catch ( BussinessException e ) {
+					log.error(e.getMessage());
+				}
+				
+			}while(ch1 != 9);
+			scan.close();
+		}
+}

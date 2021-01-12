@@ -12,7 +12,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.concurrent.CountDownLatch;
 
 import org.apache.log4j.Logger;
 
@@ -69,6 +68,7 @@ public class MainBank {
 							
 							
 							case 1:
+								
 								log.info("Enter Your Name: ");
 								name = scan.nextLine();
 								logFile.trace(name);
@@ -214,6 +214,7 @@ public class MainBank {
 						
 					case 2:
 						log.info("Create New Bank Account >>>");
+						log.info("Minimum Amount for Opening an Account is $100.");
 						log.info("1) Savings Account");
 						log.info("2) Checking Account");
 						log.info("Enter Your Choise:");
@@ -440,9 +441,13 @@ public class MainBank {
 		Account account = null;
 		Transaction transaction = null;
 		
+		CustomerOperations customerOprations = new CustomerOperationsImpl();
 		EmployeeSservices employeeSservices = new EmployeeSservicesImpl();
 		TrasactionService transactionService = new TransactioServiceImpl();
 		
+		String name, email, pass, gender, address;
+		long number, ssn;
+		int age;
 		
 		int status;
 		int ch1, check, selection;	
@@ -453,10 +458,11 @@ public class MainBank {
 			
 			try {
 				log.info("###########################################################");
-				log.info("1) To Get All Csutomer Details Detail");
+				log.info("1) To Get All Csutomer and Account Details Detail");
 				log.info("2) To Get All pending Request/s for Account Opening");
 				log.info("3) Pending Transaction/s Request/s");
 				log.info("4) Show Account/s Details");
+				log.info("5) New Customer Registration");
 				log.info("9) Log Out");
 				log.info("###########################################################");
 				log.info("Enter Your Choise: ");
@@ -464,18 +470,50 @@ public class MainBank {
 				logFile.trace(ch1);
 				status = 0;
 				check = 0;
+				int count = 0;
 				selection = 0;
 				switch( ch1 ) {
 					
 					case 1:
-						log.info("This module is under construction");
+						log.info("All Customers/ Details:");
+						List<Customer> allCustomerList = new ArrayList<>();
+						allCustomerList = employeeSservices.getAllCustomers();
+						count =1;
+						for(Customer c: allCustomerList) {
+							log.info(count++);
+							log.info(c);
+						}
+						log.info("1) To see Customer's Bank Account/s");
+						log.info("2) To Do Nothing");
+						selection = Integer.parseInt(scan.nextLine());
+						logFile.info(selection);
+						if(selection == 1) {
+							log.info("Select Customer from the Index:");
+							int index = Integer.parseInt(scan.nextLine());
+							logFile.info(index);
+							if(index < count) {
+								Customer customer = allCustomerList.get(index-1);
+								logFile.info(customer);
+								
+								List<Account> customerAccountList = new ArrayList<>();
+								customerAccountList = customerOprations.getAllAccountsOfCustomer(customer);
+								
+								for(Account a: customerAccountList) {
+									log.info(a);
+								}
+								
+							}else
+								throw new BussinessException("Enter Valid Index.");
+						}else if(selection != 2)
+							throw new BussinessException("Enter Valid Selction.");
+						
 						break;
 						
 					case 2:
 						log.info("All Account Opening Pending Requests with their the Customer Details:");
 						Map<Customer, Account> customerAccountDetails = new LinkedHashMap<>();
 						customerAccountDetails = employeeSservices.getAllPendingAccountRequest();
-						int count = 1;
+						count = 1;
 						for(Map.Entry<Customer, Account> ca : customerAccountDetails.entrySet() ) {
 							log.info("\nRequest : "+ count++);
 							log.info(ca.getKey());
@@ -500,6 +538,7 @@ public class MainBank {
 							log.info("1) For Approval.");
 							log.info("2) For Rejection.");
 							log.info("3) To Do Nothing and Exit.");
+							log.info("4) Transaction Details By Account Number");
 							log.info("Enter Choise: ");
 							status = Integer.parseInt(scan.nextLine());
 							logFile.info(status);
@@ -557,10 +596,62 @@ public class MainBank {
 						break;
 						
 					case 4:
-						log.info("This module is under construction");
+						log.info("Transaction Details by Account Number:");
+						log.info("Enter Account Number: ");
+						long accountNum = Long.parseLong(scan.nextLine());
+						logFile.info(accountNum);
+						List<Transaction> accountTransactionList = transactionService.getAllTransactionOfAllAccountsByAcountNumber(accountNum);
+						count =1;
+						for(Transaction t:accountTransactionList) {
+							log.info(count++);
+							log.info(t);
+						}
 						break;
 						
+					case 5:
 						
+						log.info("Enter Your Name: ");
+						name = scan.nextLine();
+						logFile.trace(name);
+						log.info("Enter Your Email: ");
+						email = scan.nextLine();
+						logFile.trace(email);
+						log.info("Enter Your Password: ");
+						pass = scan.nextLine();
+						logFile.trace(pass);
+						log.info("Enter Your Mobile Number: ");
+						number = Long.parseLong(scan.nextLine());
+						logFile.trace(number);
+						log.info("Enter Your Social Security Number: ");
+						ssn = Long.parseLong(scan.nextLine());
+						logFile.trace(ssn);
+						log.info("Enter Your Gender: ");
+						gender = scan.nextLine();
+						logFile.trace(gender);
+						
+						log.info("Enter Your Date of Birth (YYYY-MM-DD) : ");
+						String d = scan.nextLine();
+						logFile.trace(d);
+						
+						SimpleDateFormat simpleFormat = new SimpleDateFormat("yyyy-MM-dd");
+						Date dob = simpleFormat.parse(d);
+						logFile.trace("Coverted to Date Obj: "+dob);
+						
+						//converting dob to age
+						LocalDate dobAge = LocalDate.parse(d, DateTimeFormatter.ofPattern("yyyy-MM-dd") );
+						logFile.trace("LOCAL DATE OBJ>>> DOB: "+dobAge);
+						age = Period.between(dobAge, LocalDate.now()).getYears();
+						logFile.trace("age: "+ age);
+						
+						log.info("Enter Your Address: ");
+						address = scan.nextLine();
+						log.trace(address);								
+						
+						Customer customer = new Customer(name, email, pass, number, ssn, gender, dob, address, age);
+						//customerOperations.newCustomerRegistration(customer);
+						customerOprations.newCustomerRegistration(customer);
+						log.info("Registration Successfully...\n\n");
+						break;
 					case 9:
 						log.info("You are Logged Out.");
 						break;
@@ -582,6 +673,9 @@ public class MainBank {
 				logFile.error(e);
 			} catch ( BussinessException e ) {
 				log.error(e.getMessage());
+			}catch (ParseException e) {
+				log.error("Enter Valid Date Formate in ( YYYY-MM-DD ).");
+				logFile.error(e);
 			}
 			
 		}while(ch1 != 9);

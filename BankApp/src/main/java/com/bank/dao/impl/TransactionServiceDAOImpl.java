@@ -1,6 +1,5 @@
 package com.bank.dao.impl;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -211,7 +210,7 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 		
 		try ( Connection connection = PostresqlConnection.getConnection() ){
 			
-			String quey = "select * from bank.transaction where acc_num = ? and status = 1 or status = 2 order by t_id;";
+			String quey = "select * from bank.transaction where acc_num = ? and status = 1 or status = 2 order by t_id desc";
 			PreparedStatement preparedStatement = connection.prepareStatement(quey);
 			preparedStatement.setLong(1, account.getAcc_num());
 			ResultSet rs = preparedStatement.executeQuery();
@@ -251,7 +250,7 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 		
 		String msg = "Amount to Account : " + toAccount;
 		String t_type = "transfer";
-		float balance = account.getBalance() + amount;
+		float balance = account.getBalance() - amount;
 		float bal_get = 0;
 		
 		try ( Connection connection = PostresqlConnection.getConnection() ) {
@@ -275,7 +274,9 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 			preparedStatement.setString(5, t_type);
 			preparedStatement.setFloat(6, balance);
 			preparedStatement.setTime(7, new Time(new java.util.Date().getTime()));
-			preparedStatement.setInt(8, 3);
+			
+			preparedStatement.setInt(8, 4);
+			
 			c = preparedStatement.executeUpdate();
 			
 			
@@ -317,7 +318,7 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 		
 		try ( Connection connection = PostresqlConnection.getConnection() ){
 			
-			String quey = "select * from bank.transaction where acc_num = ? and t_type = 'transfer';";
+			String quey = "select * from bank.transaction where acc_num = ? and t_type = 'transfer' and status = 3;";
 			PreparedStatement preparedStatement = connection.prepareStatement(quey);
 			preparedStatement.setInt(1, account.getAcc_num());
 			ResultSet rs = preparedStatement.executeQuery();
@@ -368,7 +369,7 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 			if(toAccount == 0)
 				throw new BussinessException("Something Went wrong, try Again.");
 			
-			String sql = "select * from bank.transaction where acc_num = ? and status =3";
+			String sql = "select * from bank.transaction where acc_num = ? and status =4";
 			PreparedStatement pe = connection.prepareStatement(sql);
 			pe.setLong(1, toAccount);
 			ResultSet rs = pe.executeQuery();
@@ -377,15 +378,17 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 			}else
 				throw new BussinessException("Something Went wrong, Please Try Again. (Balance)");
 			
-			String query = "update bank.transaction set status = ? where acc_num = ? and status =3";
+			String query = "update bank.transaction set status = ? where acc_num = ? and status =?";
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 			preparedStatement.setInt(1, status);
 			preparedStatement.setLong(2, transaction.getAcc_num());
+			preparedStatement.setInt(3, 3);
 			c = preparedStatement.executeUpdate();
 			
 			PreparedStatement preparedStatement1 = connection.prepareStatement(query);
 			preparedStatement1.setInt(1, status);
 			preparedStatement1.setLong(2, toAccount);
+			preparedStatement1.setInt(3, 4);
 			c1 = preparedStatement1.executeUpdate();
 			logFile.trace(c+c1);
 			
@@ -415,6 +418,44 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 			return c;
 		else
 			throw new BussinessException("Transaction Incomplited / Transaction is not Done , Try Again Later.");
+	}
+
+	@Override
+	public List<Transaction> getAllTransactionOfAllAccountsByAcountNumber(long accountNum) throws BussinessException {
+		List<Transaction> accountTransactionList = new ArrayList<>();
+		Transaction transaction =null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+			
+			String quey = "select * from bank.transaction where acc_num = ? and status = 1 or status = 2 order by t_id desc";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setLong(1,accountNum);
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				transaction = new Transaction();
+				transaction.setT_id(rs.getInt("t_id"));
+				transaction.setAcc_num(rs.getLong("acc_num"));
+				transaction.setDate(rs.getDate("date"));
+				transaction.setMsg(rs.getString("msg"));
+				transaction.setAmount(rs.getFloat("amount"));
+				transaction.setT_type(rs.getString("t_type"));
+				transaction.setBalance(rs.getFloat("balance"));
+				transaction.setStatus(rs.getInt("status"));
+				accountTransactionList.add(transaction);
+			}
+			
+			if(accountTransactionList.size() == 0)
+				throw new BussinessException("No Transation/s found.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return accountTransactionList;
 	}
 
 }

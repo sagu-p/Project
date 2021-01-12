@@ -1,6 +1,8 @@
 package com.bank.services.impl;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.bank.dao.EmployeeOperationsDAO;
@@ -50,6 +52,18 @@ public class EmployeeSservicesImpl implements EmployeeSservices {
 		if(c == 0)
 			throw new BussinessException("None Account is Approved or Rejected.");
 		return c;
+	}
+
+	@Override
+	public List<Customer> getAllCustomers() throws BussinessException {
+		List<Customer> allCustomerList = new ArrayList<>();
+		
+		allCustomerList = employeeOperationsDAO.getAllCustomers();
+		
+		if(allCustomerList.size() == 0 )
+			throw new BussinessException("There is no Customer Found.");
+		
+		return allCustomerList;
 	}
 
 }

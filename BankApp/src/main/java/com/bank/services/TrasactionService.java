@@ -15,17 +15,35 @@ public interface TrasactionService {
 	static Logger logFile = Logger.getLogger("fileLogger.MainBank");
 	
 	//for  Transaction
+	//deposite to account
 	public int depositeToAccount(Account account, float amount) throws BussinessException;
+	
+	//wodraw from account
 	public int widrawToAccount(Account account, float amount) throws BussinessException;
+	
+	//balance inquesry
 	public Account BalanceOfAccount(Account account) throws BussinessException;
 	
+	
+	//transafer money to another Account
 	public int transferMoneyToAccount(Account account, long toAccount, float amount) throws BussinessException;
+	
+	//transfer money request from another Account
 	public List<Transaction> transferMoneyRequests (Account account) throws BussinessException;
+	
+	//trnsfer money reqest Confirmation
 	public int transferMoneyRequestsConfirmation (Transaction transaction,int status) throws BussinessException;
 	
+	//all transaction by account
 	public List<Transaction> getAllTransactionOfAllAccountsByAcount(Account account) throws BussinessException;
 	
-	//for Transaction Confirmation
+	//all transaction by account
+	public List<Transaction> getAllTransactionOfAllAccountsByAcountNumber(long accountNum) throws BussinessException;
+	
+	//for Transaction Confirmation for EMPLOYEE
+	//get all pending transaction reqest (Deposite and Widraval)
 	public List<Transaction> getAllTransactionOfAllAccountsByStatus(int status) throws BussinessException;
+	
+	//Transaction request Conformation
 	public int transactionConfirmationFromEmployee(Employee employee, Transaction transaction, int status) throws BussinessException;
 }

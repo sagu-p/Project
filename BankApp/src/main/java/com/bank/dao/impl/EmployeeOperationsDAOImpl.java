@@ -4,7 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.bank.dao.EmployeeOperationsDAO;
@@ -72,7 +74,7 @@ public class EmployeeOperationsDAOImpl implements EmployeeOperationsDAO {
 				customer.setC_id(rs.getInt("c_id"));
 				customer.setName(rs.getString("name"));
 				customer.setNumber(rs.getLong("number"));
-				customer.setNumber(rs.getLong("ssn"));
+				customer.setSsn(rs.getLong("ssn"));
 				customer.setEmail(rs.getString("email"));
 				customer.setDob(rs.getDate("dob"));
 				customer.setAddress("address");
@@ -123,6 +125,45 @@ public class EmployeeOperationsDAOImpl implements EmployeeOperationsDAO {
 		if(c == 0)
 			throw new BussinessException("None Account is Approved or Rejected.");
 		return c;
+	}
+
+	@Override
+	public List<Customer> getAllCustomers() throws BussinessException {
+
+		List<Customer> allCustomerList = new ArrayList<>();
+		Customer customer = null;
+
+		try (Connection connection =  PostresqlConnection.getConnection()) {
+			
+			String query = "select * from bank.customer";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while( rs.next() ) {
+				customer =  new Customer();
+				
+				customer.setC_id(rs.getInt("c_id"));
+				customer.setName(rs.getString("name"));
+				customer.setNumber(rs.getLong("number"));
+				customer.setSsn(rs.getLong("ssn"));
+				customer.setEmail(rs.getString("email"));
+				customer.setDob(rs.getDate("dob"));
+				customer.setAddress("address");
+				customer.setAge(rs.getInt("age"));
+				
+				allCustomerList.add(customer);
+				
+			}
+			
+			if(allCustomerList.size() == 0 )
+				throw new BussinessException("There is no Customer Found.");
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return allCustomerList;
 	}
 
 }

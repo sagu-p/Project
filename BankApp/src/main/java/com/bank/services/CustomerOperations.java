@@ -13,12 +13,23 @@ public interface CustomerOperations {
 	static Logger log = Logger.getLogger("consoleLog.MainBank");
 	static Logger logFile = Logger.getLogger("fileLogger.MainBank");
 
+	//register new Customer
 	public int newCustomerRegistration(Customer customer) throws BussinessException;
+	
+	//customer log in
 	public Customer customerLogin(String email, String pass) throws BussinessException;
+	
+	//get customer by id
 	public Customer getCustomerDetailsById(int id) throws BussinessException;
 	
+	//Acount
+	//create new Account
 	public int createNewBankAccount(Account account, Customer customer) throws BussinessException;
+	
+	//list of pending account request
 	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException;
+	
+	//all Accounts of customer
 	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException;
 	
 	

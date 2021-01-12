@@ -1,0 +1,153 @@
+package com.bank.main;
+
+import java.time.format.DateTimeParseException;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Transaction;
+import com.bank.services.TrasactionService;
+import com.bank.services.impl.TransactioServiceImpl;
+
+public class TransactionMain {
+	
+	private static Logger log = Logger.getLogger("consoleLog.MainBank");
+	private static Logger logFile = Logger.getLogger("fileLogger.MainBank");
+	
+public static void doTrasaction(Account account) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		TrasactionService transactuinService = new TransactioServiceImpl();
+		
+		
+		int ch = 0;
+		
+		do {
+			try {
+				log.info("*************************************");
+				log.info("1) To Deposite");
+				log.info("2) To Widraw");
+				log.info("3) To Trnsfer Money to Another Account");
+				log.info("4) To See Trnsfer Money Request from Another Account");
+				log.info("5) To Check Account Balance");
+				log.info("6) To See All Your Transactions Trasactions");
+				log.info("9) To Exit");
+				log.info("Enter Your Choise:");
+				log.info("*************************************");
+				log.info("Enter Your Choise: ");
+				ch = Integer.parseInt( scan.nextLine() );
+				logFile.trace(ch);
+		
+				float amount= 0;
+				switch( ch ) {
+				
+					case 1:
+						log.info("Enter Deposite Ammount:");
+						amount = Float.parseFloat(scan.nextLine());
+						logFile.info(amount);
+						transactuinService.depositeToAccount(account, amount);
+						log.info("Your Deposite Request is sent for Confirmation and It will take 1 Bussiness Days to Complete");
+						break;
+						
+					case 2:
+						log.info("Enter Widraval Ammount:");
+						amount = Float.parseFloat(scan.nextLine());
+						logFile.info(amount);
+						transactuinService.widrawToAccount(account, amount);
+						log.info("Your Widraval Request is sent for Confirmation and It will take 1 Bussiness Days to Complete");
+							
+						
+						break;
+						
+					case 3:
+						log.info("Trnsfer Money to Different Account:");
+						log.info("Enter Account Number, To Which You want to transfer :");
+						long toAccount = Long.parseLong(scan.nextLine());
+						logFile.info("toAccount : "+ toAccount);
+						log.info("Enter Amount:");
+						amount = Float.parseFloat(scan.nextLine());
+						logFile.info(amount);
+						transactuinService.transferMoneyToAccount(account, toAccount, amount);
+						log.info("Your Transfer Request is sent for Confirmation to the Person, whom You sent the Money and When that Person Respond to that Request then Transaction is Complete");
+						break;
+						
+					case 4:
+						log.info("Transfer Money Request/s from another Account:");
+						List<Transaction> getTransactionList = transactuinService.transferMoneyRequests(account);
+						int count = 1;
+						for(Transaction t: getTransactionList) {
+							log.info("Transaction :"+ count++);
+							log.info(t);
+						}
+						log.info("1) Want to Respond");
+						log.info("2) Do Nothing");
+						log.info("Enter :");
+						int selection = Integer.parseInt(scan.nextLine());
+						logFile.info(selection);
+						if(selection == 1) {
+							log.info("Select Transaction:");
+							int selection1 = Integer.parseInt(scan.nextLine());
+							logFile.info(selection1);
+							if(selection1 < count) {
+								Transaction transaction = getTransactionList.get(selection1 - 1);
+								log.info("1) Approve");
+								log.info("2) Reject");
+								log.info("3) Do Nothing");
+								log.info("Enter Your Choise :");
+								int status = Integer.parseInt(scan.nextLine());
+								logFile.info(status);
+								if(status == 1 || status == 2)
+									transactuinService.transferMoneyRequestsConfirmation(transaction, status);
+								else if(status != 3)
+									throw new BussinessException("Enter Valid Selection.");
+							}else
+								throw new BussinessException("Select Valid Transaction.");
+						}else if (selection !=2)
+							throw new BussinessException("Enter Valid Selection.");
+						log.info("Transfer Confirmation is Responded Successfully.");
+						break;
+						
+					case 5:
+						log.info("Your Account Balance Info: ");
+						account = transactuinService.BalanceOfAccount(account);
+						log.info("Your Account Current Balance is "+account.getBalance());
+						break;
+						
+					case 6:
+						log.info("\nAll Completed Transaction/s:");
+						List<Transaction> transactionList = transactuinService.getAllTransactionOfAllAccountsByAcount(account);
+						for(Transaction t: transactionList) {
+							log.info(t + "\n");
+						}
+						break;
+					case 9:
+						log.info("You are Logged Out from this  Account.");
+						break;
+						
+					default:
+						log.info("Enter Valid Choise from Menu.");
+				
+				}
+			} catch(NumberFormatException e)
+			{
+				log.error("Enter Valid digit. Don't Enter Charactures or Special Symbols.");
+				logFile.error(e);
+			} catch (DateTimeParseException e)
+			{
+				log.error("Enter Valid Date of Birth in (YYYY-MM-DD).");
+				logFile.error(e);
+			} catch (BussinessException e) {
+				log.error(e.getMessage());
+			}
+			
+			
+		}while(ch!=9);
+		
+		scan.close();
+	}
+
+}
