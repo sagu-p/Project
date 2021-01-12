@@ -2,6 +2,7 @@
 <typeInfoHistroy>
     <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{CustomerOperationsDAO.java[CustomerOperationsDAO" modifiers="513" timestamp="1610292580665"/>
     <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{EmployeeOperationsDAO.java[EmployeeOperationsDAO" modifiers="513" timestamp="1610131399831"/>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.services{TrasactionService.java[TrasactionService" modifiers="513" timestamp="1610311300188"/>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{TransationServiceDAO.java[TransationServiceDAO" modifiers="513" timestamp="1610311306237"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.services{TrasactionService.java[TrasactionService" modifiers="513" timestamp="1610374877233"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{TransationServiceDAO.java[TransationServiceDAO" modifiers="513" timestamp="1610374906280"/>
+    <typeInfo handle="=MokitoJUnit/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;eg{AB.java[AB" modifiers="513" timestamp="1610395457245"/>
 </typeInfoHistroy>

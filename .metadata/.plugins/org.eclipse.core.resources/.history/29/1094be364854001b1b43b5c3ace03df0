@@ -1,0 +1,7 @@
+package eg.impl;
+
+import eg.AB;
+
+public class ABImpl implements AB {
+
+}

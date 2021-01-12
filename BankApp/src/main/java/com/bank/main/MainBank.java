@@ -12,6 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.concurrent.CountDownLatch;
 
 import org.apache.log4j.Logger;
 
@@ -262,7 +263,12 @@ public class MainBank {
 					case 5:
 						log.info("All your Account/s Details");
 						List<Account> customerAccounts = customerOperations.getAllAccountsOfCustomer(customer);
-						log.info(customerAccounts+"\n");
+						count = 1;
+						for(Account a: customerAccounts) {
+							log.info("Account : "+ count++);
+							log.info(a + "\n");
+						}
+							
 						
 						
 						break;
@@ -308,8 +314,9 @@ public class MainBank {
 				log.info("1) To Deposite");
 				log.info("2) To Widraw");
 				log.info("3) To Trnsfer Money to Another Account");
-				log.info("4) To Check Account Balance");
-				log.info("5) To See All Your Transactions Trasactions");
+				log.info("4) To See Trnsfer Money Request from Another Account");
+				log.info("5) To Check Account Balance");
+				log.info("6) To See All Your Transactions Trasactions");
 				log.info("9) To Exit");
 				log.info("Enter Your Choise:");
 				log.info("*************************************");
@@ -339,16 +346,60 @@ public class MainBank {
 						break;
 						
 					case 3:
-						log.info("This Module is under Cinstruction");
+						log.info("Trnsfer Money to Different Account:");
+						log.info("Enter Account Number, To Which You want to transfer :");
+						long toAccount = Long.parseLong(scan.nextLine());
+						logFile.info("toAccount : "+ toAccount);
+						log.info("Enter Amount:");
+						amount = Float.parseFloat(scan.nextLine());
+						logFile.info(amount);
+						transactuinService.transferMoneyToAccount(account, toAccount, amount);
+						log.info("Your Transfer Request is sent for Confirmation to the Person, whom You sent the Money and When that Person Respond to that Request then Transaction is Complete");
 						break;
 						
 					case 4:
+						log.info("Transfer Money Request/s from another Account:");
+						List<Transaction> getTransactionList = transactuinService.transferMoneyRequests(account);
+						int count = 1;
+						for(Transaction t: getTransactionList) {
+							log.info("Transaction :"+ count++);
+							log.info(t);
+						}
+						log.info("1) Want to Respond");
+						log.info("2) Do Nothing");
+						log.info("Enter :");
+						int selection = Integer.parseInt(scan.nextLine());
+						logFile.info(selection);
+						if(selection == 1) {
+							log.info("Select Transaction:");
+							int selection1 = Integer.parseInt(scan.nextLine());
+							logFile.info(selection1);
+							if(selection1 < count) {
+								Transaction transaction = getTransactionList.get(selection1 - 1);
+								log.info("1) Approve");
+								log.info("2) Reject");
+								log.info("3) Do Nothing");
+								log.info("Enter Your Choise :");
+								int status = Integer.parseInt(scan.nextLine());
+								logFile.info(status);
+								if(status == 1 || status == 2)
+									transactuinService.transferMoneyRequestsConfirmation(transaction, status);
+								else if(status != 3)
+									throw new BussinessException("Enter Valid Selection.");
+							}else
+								throw new BussinessException("Select Valid Transaction.");
+						}else if (selection !=2)
+							throw new BussinessException("Enter Valid Selection.");
+						log.info("Transfer Confirmation is Responded Successfully.");
+						break;
+						
+					case 5:
 						log.info("Your Account Balance Info: ");
 						account = transactuinService.BalanceOfAccount(account);
 						log.info("Your Account Current Balance is "+account.getBalance());
 						break;
 						
-					case 5:
+					case 6:
 						log.info("\nAll Completed Transaction/s:");
 						List<Transaction> transactionList = transactuinService.getAllTransactionOfAllAccountsByAcount(account);
 						for(Transaction t: transactionList) {

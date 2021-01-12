@@ -1,5 +1,7 @@
 package com.bank.dao.impl;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -59,7 +61,7 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 		int c= 0;
 		
 		if(amount > account.getBalance()) 
-			throw new BussinessException("There is not enough Balance, Try agani with Less Amount.");
+			throw new BussinessException("There is not enough Balance, Try again with Less Amount.");
 		
 		String msg = "Amount Credit from Account";
 		String t_type = "credit";	
@@ -238,6 +240,181 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 		}
 		
 		return transactionList;
+	}
+
+	@Override
+	public int transferMoneyToAccount(Account account, long toAccount, float amount) throws BussinessException {
+		
+		int c= 0, c1=0;
+		if(amount > account.getBalance()) 
+			throw new BussinessException("There is not enough Balance, Try again with Less Amount.");
+		
+		String msg = "Amount to Account : " + toAccount;
+		String t_type = "transfer";
+		float balance = account.getBalance() + amount;
+		float bal_get = 0;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ) {
+			
+			String sql = "select balance from bank.account a where acc_num = ?";
+			PreparedStatement pe = connection.prepareStatement(sql);
+			pe.setLong(1, toAccount);
+			ResultSet rs = pe.executeQuery();
+			if(rs.next()) {
+				bal_get = rs.getFloat("balance");
+			}else
+				throw new BussinessException("Something Went wrong, Please Try Again.");
+			
+			
+			String query = "insert into bank.transaction (acc_num, date, msg, amount, t_type, balance, time,status) values (?,?,?,?,?,?,?,?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setLong(1, account.getAcc_num());
+			preparedStatement.setDate(2, new Date(new java.util.Date().getTime()));
+			preparedStatement.setString(3, msg);
+			preparedStatement.setFloat(4, amount);
+			preparedStatement.setString(5, t_type);
+			preparedStatement.setFloat(6, balance);
+			preparedStatement.setTime(7, new Time(new java.util.Date().getTime()));
+			preparedStatement.setInt(8, 3);
+			c = preparedStatement.executeUpdate();
+			
+			
+				
+			float bal_put = bal_get + amount;
+			
+			
+			String msg2 = "Amount from Account : " + account.getAcc_num();
+			PreparedStatement preparedStatement1 = connection.prepareStatement(query);
+			preparedStatement1.setLong(1, toAccount);
+			preparedStatement1.setDate(2, new Date(new java.util.Date().getTime()));
+			preparedStatement1.setString(3, msg2);
+			preparedStatement1.setFloat(4, amount);
+			preparedStatement1.setString(5, t_type);
+			preparedStatement1.setFloat(6, bal_put);
+			preparedStatement1.setTime(7, new Time(new java.util.Date().getTime()));
+			preparedStatement1.setInt(8, 3);
+			c1 = preparedStatement1.executeUpdate();
+			
+			logFile.trace(c+c1);
+			
+		} catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		if(c != 0 || c1 != 0)
+			return c;
+		else
+			throw new BussinessException("Transaction Incomplited / Transaction is not Done , Try Again Later.");
+
+	}
+
+	@Override
+	public List<Transaction> transferMoneyRequests(Account account) throws BussinessException {
+		List<Transaction> transactionList = new ArrayList<>();
+		Transaction transaction =null;
+		
+		try ( Connection connection = PostresqlConnection.getConnection() ){
+			
+			String quey = "select * from bank.transaction where acc_num = ? and t_type = 'transfer';";
+			PreparedStatement preparedStatement = connection.prepareStatement(quey);
+			preparedStatement.setInt(1, account.getAcc_num());
+			ResultSet rs = preparedStatement.executeQuery();
+			
+			while(rs.next()) {
+				
+				transaction = new Transaction();
+				transaction.setT_id(rs.getInt("t_id"));
+				transaction.setAcc_num(rs.getLong("acc_num"));
+				transaction.setDate(rs.getDate("date"));
+				transaction.setMsg(rs.getString("msg"));
+				transaction.setAmount(rs.getFloat("amount"));
+				transaction.setT_type(rs.getString("t_type"));
+				transaction.setBalance(rs.getFloat("balance"));
+				transaction.setStatus(rs.getInt("status"));
+				transactionList.add(transaction);
+				
+			}
+			
+			if(transactionList.size() == 0)
+				throw new BussinessException("No Transation/s found.");
+			
+		}catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		return transactionList;
+	}
+
+	@Override
+	public int transferMoneyRequestsConfirmation(Transaction transaction, int status) throws BussinessException {
+		int c= 0, c1=0, c2=0, c3=0;
+		float bal_get = 0;
+		int toAccount = 0;
+		try ( Connection connection = PostresqlConnection.getConnection() ) {
+			
+			String msg2 = transaction.getMsg();
+			logFile.trace("MSG: "+msg2);
+			String[] arr = msg2.split(" ");
+			for(String s:arr) {
+				if(s.matches("\\d{6}")) {
+					toAccount = Integer.parseInt(s);
+					logFile.info("toAccount : "+ toAccount);
+				}
+			}
+			if(toAccount == 0)
+				throw new BussinessException("Something Went wrong, try Again.");
+			
+			String sql = "select * from bank.transaction where acc_num = ? and status =3";
+			PreparedStatement pe = connection.prepareStatement(sql);
+			pe.setLong(1, toAccount);
+			ResultSet rs = pe.executeQuery();
+			if(rs.next()) {
+				bal_get = rs.getFloat("balance");
+			}else
+				throw new BussinessException("Something Went wrong, Please Try Again. (Balance)");
+			
+			String query = "update bank.transaction set status = ? where acc_num = ? and status =3";
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, status);
+			preparedStatement.setLong(2, transaction.getAcc_num());
+			c = preparedStatement.executeUpdate();
+			
+			PreparedStatement preparedStatement1 = connection.prepareStatement(query);
+			preparedStatement1.setInt(1, status);
+			preparedStatement1.setLong(2, toAccount);
+			c1 = preparedStatement1.executeUpdate();
+			logFile.trace(c+c1);
+			
+			if(status == 1) {
+				String sql1 = "update bank.account set balance =? where acc_num =?";
+				PreparedStatement pe2 = connection.prepareStatement(sql1);
+				pe2.setFloat(1, transaction.getBalance());
+				pe2.setLong(2, transaction.getAcc_num());
+				c2 = pe2.executeUpdate();
+				
+				PreparedStatement pe3 = connection.prepareStatement(sql1);
+				pe3.setFloat(1, bal_get);
+				pe3.setLong(2, toAccount);
+				c3 = pe3.executeUpdate();
+				
+				logFile.trace(c2+c3);
+			}
+			logFile.trace(c+c1);
+			
+		} catch (ClassNotFoundException e) {
+			log.error(e);
+		} catch (SQLException e) {
+			log.error(e);
+		}
+		
+		if(c != 0 || c1 != 0 || c2 != 0 || c3 != 0)
+			return c;
+		else
+			throw new BussinessException("Transaction Incomplited / Transaction is not Done , Try Again Later.");
 	}
 
 }

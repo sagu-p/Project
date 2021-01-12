@@ -1,7 +1,0 @@
-{TRACE}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	Start >>>>                                                             
-{INFO}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	=========================================                              
-{INFO}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	1) For Registration (New Customer)                                     
-{INFO}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	2) For Log In                                                          
-{INFO}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	3) Exit                                                                
-{INFO}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	===========================================                            
-{INFO}	04-01-2021 Monday EST 15:10:37	com.bank.main.MainBank                  	Enter Your Choise:                                                     

@@ -19,32 +19,26 @@ public class TransactioServiceImpl implements TrasactionService {
 	public int depositeToAccount(Account account, float amount) throws BussinessException {
 		
 		int c = 0;
-		
 		if(amount > 0) {
 			c = transationServiceDAO.depositeToAccount(account, amount);
 		}
 		else
 			throw new BussinessException("Deposite Amount should more than Zero(0).");
-		
 		if(c == 0)
 			throw new BussinessException("Transaction Incompleted.");
-		
 		return c;
 	}
 
 	@Override
 	public int widrawToAccount(Account account, float amount) throws BussinessException {
 		int c = 0;
-		
 		if(amount > 0) {
 			c = transationServiceDAO.widrawToAccount(account, amount);
 		}
 		else
 			throw new BussinessException("Widraval Amount should more than Zero(0).");
-		
 		if(c == 0)
 			throw new BussinessException("Transaction Incompleted.");
-		
 		return c;
 	}
 
@@ -101,5 +95,54 @@ public class TransactioServiceImpl implements TrasactionService {
 			throw new BussinessException("No Transation/s found.");
 		
 		return transactionList;
+	}
+
+	@Override
+	public int transferMoneyToAccount(Account account, long toAccount, float amount) throws BussinessException {
+		int c = 0;
+		String accCheck = toAccount + "";
+		
+		if(account.getAcc_num() != toAccount) {
+			if(accCheck.matches("[0-9]{6}")) {
+				if(amount > 0) {
+					c = transationServiceDAO.transferMoneyToAccount(account, toAccount, amount);
+				}
+				else
+					throw new BussinessException("Widraval Amount should more than Zero(0).");
+			} else
+				throw new BussinessException("Enter Valid Account Number.");
+		}else
+			throw new BussinessException("You Can not Transfer Money to Your Own Account.");
+		
+		if(c == 0)
+			throw new BussinessException("Transaction Incompleted.");
+		return c;
+	}
+
+	@Override
+	public List<Transaction> transferMoneyRequests(Account account) throws BussinessException {
+		List<Transaction> transactionList = new ArrayList<>();
+		
+		transactionList = transationServiceDAO.transferMoneyRequests(account);
+		
+		if(transactionList.size() == 0)
+			throw new BussinessException("No Transation/s found.");
+		
+		return transactionList;
+	}
+
+	@Override
+	public int transferMoneyRequestsConfirmation(Transaction transaction, int status) throws BussinessException {
+		int c = 0;
+		
+		if(status  == 1 || status == 2)
+			c = transationServiceDAO.transferMoneyRequestsConfirmation(transaction, status);
+		else
+			throw new BussinessException("Can not Complete the Transaction at the moment, Try Aganin Later");
+		
+		if(c == 0)
+			throw new BussinessException("Transaction Incomplited / Transaction is not Done , Try Again Later.");
+		
+		return c;
 	}
 }

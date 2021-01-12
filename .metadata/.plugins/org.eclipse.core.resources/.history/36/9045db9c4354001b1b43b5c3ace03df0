@@ -1,0 +1,244 @@
+package com.bank.dao;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.mockStatic;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Date;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import org.mockito.Mockito;
+
+import com.bank.dao.impl.CustomerOperationsDAOImpl;
+import com.bank.dao.util.PostresqlConnection;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
+
+class CustomerOperationsDAOTest {
+
+	Connection mockConnection;
+	PreparedStatement mockPreparedStatement; 
+	ResultSet mockResultSet;
+	
+	Account mockAccount;
+	Customer mockCustomer;
+	
+	//CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+	
+	@BeforeAll
+	public static void initalize() throws SQLException, ClassNotFoundException {
+		mockStatic(PostresqlConnection.class);
+	}
+	
+	@BeforeEach
+	public void setUp() throws ClassNotFoundException, SQLException {
+		
+		mockConnection = mock(Connection.class);
+		mockPreparedStatement = mock(PreparedStatement.class);
+		mockResultSet = mock(ResultSet.class);
+		
+		mockAccount = mock(Account.class);
+		mockCustomer = mock(Customer.class);
+		
+		when(PostresqlConnection.getConnection()).thenReturn(mockConnection);
+		//when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		doNothing().when(mockPreparedStatement).setLong(Mockito.anyInt(), Mockito.anyLong());
+		doNothing().when(mockPreparedStatement).setDate(Mockito.anyInt(), Mockito.any(java.sql.Date.class));
+		
+	}
+	
+	//New Customer Registration Test
+	@Test
+	public void testNewCustomerRegistration() throws SQLException, BussinessException {
+		
+		Date d = mock(Date.class);
+		when(mockCustomer.getDob()).thenReturn(d);
+		
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		when(mockPreparedStatement.executeUpdate()).thenReturn(1);
+		
+		CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+		customerOperationsDAO.newCustomerRegistration(mockCustomer);
+		
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).setInt(Mockito.anyInt(), Mockito.anyInt());
+		verify(mockPreparedStatement, times(2)).setLong(Mockito.anyInt(), Mockito.anyLong());
+		verify(mockPreparedStatement, times(1)).setDate(Mockito.anyInt(), Mockito.any(java.sql.Date.class));
+		verify(mockPreparedStatement, times(1)).executeUpdate();
+
+		System.out.println("Test for Customer Registration Successful.");
+	}
+	
+
+	@Test
+	public void testNewCustomerRegistrationSQLException() throws SQLException, BussinessException {
+		
+		Date d = mock(Date.class);
+		when(mockCustomer.getDob()).thenReturn(d);
+		
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		when(mockPreparedStatement.executeUpdate()).thenReturn(0);
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+				customerOperationsDAO.newCustomerRegistration(mockCustomer);
+			}
+		});
+				
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).setInt(Mockito.anyInt(), Mockito.anyInt());
+		verify(mockPreparedStatement, times(2)).setLong(Mockito.anyInt(), Mockito.anyLong());
+		verify(mockPreparedStatement, times(1)).setDate(Mockito.anyInt(), Mockito.any(java.sql.Date.class));
+		verify(mockPreparedStatement, times(1)).executeUpdate();		
+		System.out.println("Test for Customer not get Registered throws BussinessException().");
+	}
+	
+	
+	//Customer Log In
+	@Test
+	public void testEmployeeLogIn() throws BussinessException, SQLException, RuntimeException {
+		
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		
+		when(mockResultSet.next()).thenReturn(Boolean.TRUE);
+		
+		CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+		customerOperationsDAO.customerLogin("","");
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(2)).setString(Mockito.anyInt(), Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).executeQuery();
+			
+		System.out.println("Customer Log In Test Successful.");
+	}
+	
+	
+	@Test
+	public void testEmployeeLogInWithException() throws BussinessException, SQLException, RuntimeException {
+		
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		
+		when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+		
+		assertThrows(BussinessException.class, new Executable() {	
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+				customerOperationsDAO.customerLogin("","");
+			}
+		});
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(2)).setString(Mockito.anyInt(), Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).executeQuery();
+		System.out.println("Customer Log In Test Successful throws BussinessException().");
+	}
+	
+	
+	// creating new bank Account
+	@Test
+	public void testCreateNewBankAccount() throws SQLException, BussinessException {
+		
+		Date d = mock(Date.class);
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		when(mockAccount.getOpen_date()).thenReturn(d);
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		doNothing().when(mockPreparedStatement).setDate(Mockito.anyInt(), Mockito.any(java.sql.Date.class));
+		
+		when(mockPreparedStatement.executeUpdate()).thenReturn(1);
+		
+		CustomerOperationsDAO customerOperationsDAO = new CustomerOperationsDAOImpl();
+		customerOperationsDAO.createNewBankAccount(mockAccount, mockCustomer);
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).setInt(Mockito.anyInt(), Mockito.anyInt());
+		verify(mockPreparedStatement, times(1)).setDate(Mockito.anyInt(), Mockito.any(java.sql.Date.class));
+		verify(mockPreparedStatement, times(1)).executeUpdate();
+		
+		System.out.println("Test for Create new Bank Account Successful.");
+	}
+	
+	/*
+	@Test
+	public void testCreateNewBankAccountWithException() throws SQLException, BussinessException {
+		
+		Date d = mock(Date.class);
+		when(mockAccount.getOpen_date()).thenReturn(d);
+		doNothing().when(mockPreparedStatement).setString(Mockito.anyInt(), Mockito.anyString());
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		doNothing().when(mockPreparedStatement).setDate(Mockito.anyInt(), Mockito.any(java.sql.Date.class));
+		
+		when(mockPreparedStatement.executeUpdate()).thenReturn(0);
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				customerOperationsDAO.createNewBankAccount(mockAccount, mockCustomer);
+			}
+		});
+		
+		System.out.println("Test for Create new Bank Account Successful.");
+	}
+	
+	//get pending reqest of accounts
+	@Test
+	public void testGetPendingRequesteAccount() throws BussinessException, SQLException, RuntimeException {
+			
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+			
+		when(mockResultSet.next()).thenReturn(Boolean.TRUE,Boolean.TRUE,Boolean.FALSE);
+		
+		assertNotNull(customerOperationsDAO.getPendingRequesteAccount(mockCustomer));
+			
+		System.out.println("Customer Account Opening Pending Request are Received.");
+	}
+	
+	@Test
+	public void testGetPendingRequesteAccountWithException() throws BussinessException, SQLException, RuntimeException {
+			
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+			
+		when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				customerOperationsDAO.getPendingRequesteAccount(mockCustomer);
+			}
+		});
+			
+		System.out.println("Customer Account Opening Pending Request are no recevied and throws BussinessException().");
+	}
+	*/
+}

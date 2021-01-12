@@ -1,0 +1,13 @@
+package eg.impl;
+
+import eg.AB;
+
+public class ABImpl implements AB {
+
+	@Override
+	public int sumation(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,19 @@
+package eg;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+
+import org.junit.jupiter.api.Test;
+
+import demo.A;
+
+class ABTest {
+	
+	A o = mock(A.class)
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

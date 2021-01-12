@@ -18,6 +18,11 @@ public interface TransationServiceDAO {
 	public int depositeToAccount(Account account, float amount) throws BussinessException;
 	public int widrawToAccount(Account account, float amount) throws BussinessException;
 	public Account BalanceOfAccount(Account account) throws BussinessException;
+	
+	public int transferMoneyToAccount(Account account, long toAccount, float amount) throws BussinessException;
+	public List<Transaction> transferMoneyRequests (Account account) throws BussinessException;
+	public int transferMoneyRequestsConfirmation (Transaction transaction,int status) throws BussinessException;
+	
 	public List<Transaction> getAllTransactionOfAllAccountsByAcount(Account account) throws BussinessException;
 	
 	//for Transaction Confirmation
