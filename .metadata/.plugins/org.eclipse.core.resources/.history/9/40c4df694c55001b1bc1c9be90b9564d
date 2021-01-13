@@ -1,0 +1,137 @@
+package com.bank.dao;
+
+import static org.hamcrest.CoreMatchers.any;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.mockStatic;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Time;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import org.mockito.Mockito;
+
+import com.bank.dao.impl.EmployeeOperationsDAOImpl;
+import com.bank.dao.impl.TransactionServiceDAOImpl;
+import com.bank.dao.util.PostresqlConnection;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
+import com.bank.modal.Employee;
+
+class TransationServiceDAOTest {
+
+	Connection mockConnection;
+	PreparedStatement mockPreparedStatement; 
+	ResultSet mockResultSet;
+	
+	Account mockAccount;
+	Employee mockEmployee;
+	Customer mockCustomer;
+	
+	@BeforeAll
+	public static void initalize() throws SQLException, ClassNotFoundException {
+		mockStatic(PostresqlConnection.class);
+	}
+	
+	@BeforeEach
+	public void setUp() throws ClassNotFoundException, SQLException {
+		
+		mockConnection = mock(Connection.class);
+		mockPreparedStatement = mock(PreparedStatement.class);
+		mockResultSet = mock(ResultSet.class);
+		
+		mockEmployee = mock(Employee.class);
+		mockAccount = mock(Account.class);
+		mockCustomer = mock(Customer.class);
+		
+		when(PostresqlConnection.getConnection()).thenReturn(mockConnection);
+		
+		//System.out.println("Before Each Test");
+	}
+	
+	// balance of Account
+	@Test
+	void testBalanceOfAccount() throws SQLException, BussinessException {
+		
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		doNothing().when(mockPreparedStatement).setLong(Mockito.anyInt(), Mockito.anyLong());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		when(mockResultSet.next()).thenReturn(Boolean.TRUE);
+		
+		TransationServiceDAO transactionServiceDAO = new TransactionServiceDAOImpl();
+		transactionServiceDAO.BalanceOfAccount(mockAccount);
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).setLong(Mockito.anyInt(), Mockito.anyLong());
+		verify(mockPreparedStatement, times(1)).executeQuery();
+		verify(mockResultSet, times(1)).next();
+		
+		System.out.println("Account of Balance.");
+	}
+	
+	@Test
+	void testBalanceOfAccountWithException() throws SQLException, BussinessException {
+		
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		doNothing().when(mockPreparedStatement).setLong(Mockito.anyInt(), Mockito.anyLong());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				TransationServiceDAO transactionServiceDAO = new TransactionServiceDAOImpl();
+				transactionServiceDAO.BalanceOfAccount(mockAccount);
+			}
+		});
+		
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).setLong(Mockito.anyInt(), Mockito.anyLong());
+		verify(mockPreparedStatement, times(1)).executeQuery();
+		verify(mockResultSet, times(1)).next();
+		
+		System.out.println("Account of Balance Exception.");
+	}
+
+	//get transaction by status
+	@Test
+	public void testGetAllTransactionOfAllAccountsByStatus() throws SQLException , BussinessException {
+		when(mockConnection.prepareStatement(Mockito.anyString())).thenReturn(mockPreparedStatement);
+		doNothing().when(mockPreparedStatement).setInt(Mockito.anyInt(), Mockito.anyInt());
+		when(mockPreparedStatement.executeQuery()).thenReturn(mockResultSet);
+		when(mockResultSet.next()).thenReturn(Boolean.FALSE);
+		
+		assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				TransationServiceDAO transactionServiceDAO = new TransactionServiceDAOImpl();
+				transactionServiceDAO.BalanceOfAccount(mockAccount);
+			}
+		});
+		
+		
+		verify(mockConnection, times(1)).prepareStatement(Mockito.anyString());
+		verify(mockPreparedStatement, times(1)).setInt(Mockito.anyInt(), Mockito.anyInt());
+		verify(mockPreparedStatement, times(1)).executeQuery();
+		verify(mockResultSet, times(1)).next();
+		
+		System.out.println("Account of Balance Exception.");
+	}
+}

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{CustomerOperationsDAO.java[CustomerOperationsDAO" modifiers="513" timestamp="1610292580665"/>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{EmployeeOperationsDAO.java[EmployeeOperationsDAO" modifiers="513" timestamp="1610131399831"/>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.services{TrasactionService.java[TrasactionService" modifiers="513" timestamp="1610374877233"/>
-    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{TransationServiceDAO.java[TransationServiceDAO" modifiers="513" timestamp="1610374906280"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{CustomerOperationsDAO.java[CustomerOperationsDAO" modifiers="513" timestamp="1610466096577"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{EmployeeOperationsDAO.java[EmployeeOperationsDAO" modifiers="513" timestamp="1610472257748"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.services{TrasactionService.java[TrasactionService" modifiers="513" timestamp="1610467358260"/>
+    <typeInfo handle="=BankApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bank.dao{TransationServiceDAO.java[TransationServiceDAO" modifiers="513" timestamp="1610467392706"/>
     <typeInfo handle="=MokitoJUnit/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;eg{AB.java[AB" modifiers="513" timestamp="1610395457245"/>
 </typeInfoHistroy>
