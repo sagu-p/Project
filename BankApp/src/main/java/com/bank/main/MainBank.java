@@ -51,7 +51,7 @@ public class MainBank {
 			do {
 				
 				try {
-					
+					log.info("Welcome to Bank Application V1.0");
 					log.info("=========================================");
 					log.info("1) For Registration (New Customer)");
 					log.info("2) For Log In");
@@ -226,8 +226,12 @@ public class MainBank {
 						logFile.trace("Account Type: "+acc_type);
 						Date open_date = new Date();
 						logFile.trace("Account open date: "+open_date);
-						account = new Account(open_date, acc_type);
 						
+						log.info("Enter Stating Balance of Yor Account:");
+						float amount = Float.parseFloat(scan.nextLine());
+						if(amount < 100)
+							throw new BussinessException("Minimum Balance for opening new Account is $100.");
+						account = new Account(open_date, acc_type, amount);
 						customerOperations.createNewBankAccount(account, customer);
 						
 						log.info("Opening an Account Requested Successfully.");
@@ -240,7 +244,11 @@ public class MainBank {
 					case 3:
 						log.info("Peding Account Requessts>>>\n");
 						List<Account> pendingRequesteAccounts = customerOperations.getPendingRequesteAccount(customer);
-						log.info(pendingRequesteAccounts+"\n");
+						int count1 =1;
+						for(Account a: pendingRequesteAccounts) {
+							log.info("Account Request: "+count1++);
+							log.info(a+"\n");
+						}
 						break;
 						
 					case 4:
@@ -311,7 +319,7 @@ public class MainBank {
 		
 		do {
 			try {
-				log.info("*************************************");
+				log.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 				log.info("1) To Deposite");
 				log.info("2) To Widraw");
 				log.info("3) To Trnsfer Money to Another Account");
@@ -320,7 +328,7 @@ public class MainBank {
 				log.info("6) To See All Your Transactions Trasactions");
 				log.info("9) To Exit");
 				log.info("Enter Your Choise:");
-				log.info("*************************************");
+				log.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 				log.info("Enter Your Choise: ");
 				ch = Integer.parseInt( scan.nextLine() );
 				logFile.trace(ch);
@@ -538,7 +546,6 @@ public class MainBank {
 							log.info("1) For Approval.");
 							log.info("2) For Rejection.");
 							log.info("3) To Do Nothing and Exit.");
-							log.info("4) Transaction Details By Account Number");
 							log.info("Enter Choise: ");
 							status = Integer.parseInt(scan.nextLine());
 							logFile.info(status);

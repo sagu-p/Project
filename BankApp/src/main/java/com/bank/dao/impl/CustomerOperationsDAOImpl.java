@@ -97,12 +97,13 @@ public class CustomerOperationsDAOImpl implements CustomerOperationsDAO {
 		
 		try ( Connection connection = PostresqlConnection.getConnection() ) {
 	
-			String query = "insert into bank.account (c_id, open_date, acc_type) values (?,?,?)";
+			String query = "insert into bank.account (c_id, open_date, acc_type, balance) values (?,?,?,?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 			
 			preparedStatement.setInt(1, customer.getC_id());
 			preparedStatement.setDate(2, new java.sql.Date(account.getOpen_date().getTime()));
 			preparedStatement.setString(3, account.getAcc_type());
+			preparedStatement.setFloat(4, account.getBalance());
 			
 			c = preparedStatement.executeUpdate();
 			

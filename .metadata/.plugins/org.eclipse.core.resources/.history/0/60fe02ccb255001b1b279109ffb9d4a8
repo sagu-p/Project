@@ -1,0 +1,54 @@
+package com.bank.services;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import org.mockito.Mockito;
+
+import com.bank.dao.CustomerOperationsDAO;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Customer;
+import com.bank.modal.Employee;
+import com.bank.services.impl.CustomerOperationsImpl;
+import com.bank.services.impl.EmployeeSservicesImpl;
+
+class EmployeeSservicesTest {
+	
+	Employee mockEmployee;
+	EmployeeSservices mockEmployeeServices;
+	
+	
+	@BeforeEach
+	public void setUp() {
+		mockEmployee = mock(Employee.class);
+		mockEmployeeServices = mock(EmployeeSservices.class);
+	}
+
+	@Test
+	void testNewCustomerLogInInvalidEmail() throws BussinessException {
+		
+		
+		
+		
+		Throwable t= assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				CustomerOperations service = new CustomerOperationsImpl();
+				service.customerLogin("abcsf", "td");
+			}
+		});
+		
+		assertEquals("Enter Valid Email Address.", t.getMessage());
+		verify(mockCustomerOperationsDAO, times(0)).customerLogin("abcsf", "td");
+	}
+
+}

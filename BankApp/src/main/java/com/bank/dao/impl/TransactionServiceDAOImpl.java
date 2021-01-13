@@ -210,7 +210,7 @@ public class TransactionServiceDAOImpl implements TransationServiceDAO {
 		
 		try ( Connection connection = PostresqlConnection.getConnection() ){
 			
-			String quey = "select * from bank.transaction where acc_num = ? and status = 1 or status = 2 order by t_id desc";
+			String quey = "select * from bank.transaction where acc_num = ? and (status = 1 or status = 2) order by t_id desc";
 			PreparedStatement preparedStatement = connection.prepareStatement(quey);
 			preparedStatement.setLong(1, account.getAcc_num());
 			ResultSet rs = preparedStatement.executeQuery();

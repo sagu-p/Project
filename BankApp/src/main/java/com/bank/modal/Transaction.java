@@ -79,8 +79,8 @@ public class Transaction {
 	}
 	@Override
 	public String toString() {
-		return "Transaction\nacc_num=" + acc_num + "\ndate=" + date + "\nmsg=" + msg + "\namount=" + amount
-				+ "\nt_type=" + t_type + "\nbalance=" + balance + "\n";
+		return "Transaction Detail\nAccount Number: " + acc_num + "\nTransaction Date: " + date + "\nMessage of Transaction: " + msg + "\nTransaction Amount" + amount
+				+ "\nTransaction Ttype: " + t_type + "\nAccount Balance after Succeful Transaction: " + balance + "\n";
 	}
 	
 	

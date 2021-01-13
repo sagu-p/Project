@@ -1,0 +1,91 @@
+package com.bank.services;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+
+import com.bank.dao.TransationServiceDAO;
+import com.bank.exception.BussinessException;
+import com.bank.modal.Account;
+import com.bank.modal.Employee;
+import com.bank.services.impl.TransactioServiceImpl;
+
+class TrasactionServiceTest {
+	
+	Employee mockEmployee;
+	Account mockAccount;
+	TransationServiceDAO mockTransactionServiceDAO;
+	
+	
+	@BeforeEach
+	public void setUp() {
+		mockEmployee = mock(Employee.class);
+		mockAccount = mock(Account.class);
+		mockTransactionServiceDAO = mock(TransationServiceDAO.class);
+	}
+
+	//for deposite
+	@Test
+	void testDepositeToAccountInvalidAmount() {
+		Throwable t = assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				TrasactionService transactionService = new TransactioServiceImpl();
+				transactionService.depositeToAccount(mockAccount, -100);
+			}
+		});
+		
+		assertEquals("Deposite Amount should more than Zero(0).", t.getMessage());
+	}
+	
+	@Test
+	void testDepositeToAccountZeroAmount() {
+		Throwable t = assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				TrasactionService transactionService = new TransactioServiceImpl();
+				transactionService.depositeToAccount(mockAccount, 0);
+			}
+		});
+		
+		assertEquals("Deposite Amount should more than Zero(0).", t.getMessage());
+	}
+
+	//for widraval 
+	@Test
+	void testWidrawToAccountInvalidAmount() {
+		Throwable t = assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				TrasactionService transactionService = new TransactioServiceImpl();
+				transactionService.widrawToAccount(mockAccount, -100);
+			}
+		});
+		
+		assertEquals("Deposite Amount should more than Zero(0).", t.getMessage());
+	}
+	
+	@Test
+	void testWidrawToAccountZeroAmount() {
+		Throwable t = assertThrows(BussinessException.class, new Executable() {
+			
+			@Override
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				TrasactionService transactionService = new TransactioServiceImpl();
+				transactionService.widrawToAccount(mockAccount, 0);
+			}
+		});
+		
+		assertEquals("Deposite Amount should more than Zero(0).", t.getMessage());
+	}
+}

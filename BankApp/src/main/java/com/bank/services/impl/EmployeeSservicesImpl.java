@@ -21,7 +21,7 @@ public class EmployeeSservicesImpl implements EmployeeSservices {
 	public Employee employeeLogIn(String email, String pass) throws BussinessException {
 		Employee employee = null;
 		
-		if(email.matches("^(.+)@(.+)$"))
+		if(email.matches("^(.+)@(\\S+)\\.\\S+$"))
 		{
 			employee = employeeOperationsDAO.employeeLogIn(email, pass);
 		}

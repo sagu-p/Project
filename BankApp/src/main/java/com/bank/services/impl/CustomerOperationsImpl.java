@@ -27,7 +27,7 @@ public class CustomerOperationsImpl implements CustomerOperations {
 			throw new BussinessException("Enter Valid Gender");
 		}
 		
-		if(customer.getEmail().matches("^(.+)@(.+)$")) {
+		if(customer.getEmail().matches("^(.+)@(\\S+)\\.\\S+$")) {
 			if((customer.getNumber()+"").length() == 10) {
 				if((customer.getSsn()+"").length() == 9)
 					c = customerOperationsDAO.newCustomerRegistration(customer);
@@ -41,26 +41,21 @@ public class CustomerOperationsImpl implements CustomerOperations {
 		if(c != 0)
 			return c;
 		else
-			throw new BussinessException("User can't be able to Sign Up. [Try with different email and/or number.] ");
+			throw new BussinessException("User can't be able to Sign Up. [Try with different email and/or number.]");
 	}
 
 	@Override
 	public Customer customerLogin(String email, String pass) throws BussinessException {
 		Customer customer = null;
 		
-		if(email.matches("^(.+)@(.+)$"))
+		if(email.matches("^(.+)@(\\S+)\\.\\S+$"))
 			customer = customerOperationsDAO.customerLogin(email, pass);
 		else
 			throw new BussinessException("Enter Valid Email Address.");
-		
+		if(customer == null)
+			throw new BussinessException("Log in Failed. Enter valid Email and/or Password.");
 		
 		return customer;
-	}
-
-	@Override
-	public Customer getCustomerDetailsById(int id) throws BussinessException {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
@@ -69,7 +64,11 @@ public class CustomerOperationsImpl implements CustomerOperations {
 		
 		c = customerOperationsDAO.createNewBankAccount(account, customer);
 		
-		return c;
+		if(c != 0)
+			return c;
+		else
+			throw new BussinessException("Unable to Create an Account. Try Again...");
+		
 	}
 
 	@Override

@@ -28,5 +28,4 @@ public interface CustomerOperationsDAO {
 	
 	//All Accounts of Customer
 	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException;
-
 }

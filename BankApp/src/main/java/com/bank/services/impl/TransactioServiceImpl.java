@@ -108,7 +108,7 @@ public class TransactioServiceImpl implements TrasactionService {
 					c = transationServiceDAO.transferMoneyToAccount(account, toAccount, amount);
 				}
 				else
-					throw new BussinessException("Widraval Amount should more than Zero(0).");
+					throw new BussinessException("Transfer Amount should more than Zero(0).");
 			} else
 				throw new BussinessException("Enter Valid Account Number.");
 		}else

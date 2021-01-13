@@ -14,10 +14,11 @@ public class Account {
 		//default Constructor
 	}
 
-	public Account(Date open_date, String acc_type) {
+	public Account(Date open_date, String acc_type , float balance) {
 		super();
 		this.open_date = open_date;
 		this.acc_type = acc_type;
+		this.balance = balance;
 	}
 
 	public Account(int acc_num, float balance, Date open_date, String acc_type, int status) {
@@ -71,7 +72,7 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "\nAccount Details:\nacc_num=" + acc_num + "\nbalance=" + balance + "\nopen_date=" + open_date + "\nacc_type="
+		return "\nAccount Details:\nAccount Number: " + acc_num + "\nCurrent Balance: " + balance + "\nAccount Open Date: " + open_date + "\nAccount Type:"
 				+ acc_type + "\n" ;
 	}
 	

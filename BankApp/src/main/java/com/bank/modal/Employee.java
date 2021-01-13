@@ -85,8 +85,8 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee \nemp_id=" + emp_id + "\nname=" + name + "\nemail=" + email + "\nnumber="
-				+ number + "\ngender=" + gender + "\ndob=" + dob;
+		return "Employee \nemp_id: " + emp_id + "\nName: " + name + "\nEmail: " + email + "\nnumber: "
+				+ number + "\nGender:" + gender + "\nDate of Birth:" + dob;
 	}
 	
 	

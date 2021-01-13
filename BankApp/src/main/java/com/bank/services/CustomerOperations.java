@@ -19,9 +19,6 @@ public interface CustomerOperations {
 	//customer log in
 	public Customer customerLogin(String email, String pass) throws BussinessException;
 	
-	//get customer by id
-	public Customer getCustomerDetailsById(int id) throws BussinessException;
-	
 	//Acount
 	//create new Account
 	public int createNewBankAccount(Account account, Customer customer) throws BussinessException;
@@ -30,7 +27,5 @@ public interface CustomerOperations {
 	public List<Account> getPendingRequesteAccount(Customer customer) throws BussinessException;
 	
 	//all Accounts of customer
-	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException;
-	
-	
+	public List<Account> getAllAccountsOfCustomer(Customer customer) throws BussinessException;	
 }
